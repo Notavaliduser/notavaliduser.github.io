@@ -1,0 +1,112 @@
+:root {
+  --color-text: #1a1a1a;
+  --color-text-secondary: #555555;
+  --color-text-muted: #6e6e6e;
+  --color-bg: #ffffff;
+  --color-bg-card: #fafafa;
+  --color-bg-card-hover: #f4f7f9;
+  --color-border: #e5e5e5;
+  --color-border-hover: #93b1c4;
+  --color-accent: #4a7389;
+  --color-highlight: #3a6175;
+  --color-highlight-subtle: rgba(74, 115, 137, 0.07);
+
+  --font-sans: 'Atkinson Hyperlegible Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+
+  --max-width: 720px;
+  --max-width-wide: 960px;
+
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.75rem;
+
+  --leading-tight: 1.2;
+  --leading-normal: 1.6;
+
+  --radius: 8px;
+  --radius-lg: 16px;
+
+  --shadow-soft: 0 2px 12px rgba(0, 0, 0, 0.06);
+
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-spring: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+[data-theme="dark"] {
+  --color-text: #e5e5e5;
+  --color-text-secondary: #a8a8a8;
+  --color-text-muted: #999999;
+  --color-bg: #141414;
+  --color-bg-card: #1e1e1e;
+  --color-bg-card-hover: #262630;
+  --color-border: #2e2e2e;
+  --color-border-hover: #5a8da6;
+  --color-accent: #7ab3cc;
+  --color-highlight: #9ac5d9;
+  --color-highlight-subtle: rgba(122, 179, 204, 0.1);
+  --shadow-soft: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: var(--leading-normal);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-highlight);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4 {
+  line-height: var(--leading-tight);
+  color: var(--color-text);
+}
+
