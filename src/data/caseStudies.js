@@ -3,15 +3,15 @@ export const caseStudies = [
     id: "referrals-sharing-vision",
     title: "Rebuilding HelloFresh's Referral Programme",
     company: "HelloFresh",
-    timeframe: "2026 – Present",
+    timeframe: "Dec 2025 – Present",
     role: "Staff Product Manager",
-    metric: "€115M/year programme, narrowed -26% YoY decline to growth",
+    metric: "€115M/year programme, narrowed -26% YoY decline to -13% within one quarter",
     tagline:
       "Customers had stopped sharing. The experience made referring feel like selling — tactical, impersonal, and unchanged for three years.",
     summary: [
       "A €115M/year referral channel was in decline across every metric — invites, visits, conversions, viral coefficient.",
       "The core insight: 52% of referred friends were individually value-negative, and the programme optimised for volume over quality.",
-      "Rebuilt the sharing experience, launched campaign infrastructure, and narrowed the YoY gap from -26% to growth — weekly invites up +18%, sessions +19%.",
+      "Rebuilt the sharing experience, launched campaign infrastructure, and narrowed the YoY gap from -26% to -13% within one quarter — weekly invites up +18%, sessions +19%.",
       "Key decision: shipped campaigns before fully consolidating the backend, accepting technical debt to capture seasonal windows.",
     ],
     sections: [
