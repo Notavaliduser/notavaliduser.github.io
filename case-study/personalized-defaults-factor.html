@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Product management portfolio — e-commerce, food tech, and grocery. Staff PM with 8+ years shipping products that move real business metrics.">
+  <meta name="robots" content="noai, noimageai">
+  <meta property="og:title" content="Personalized Meal Defaults for Factor US — Rachna Ravi">
+  <meta property="og:description" content="Rigour and speed aren&apos;t tradeoffs; they&apos;re how you avoid building the wrong thing really well.">
+  <meta property="og:image" content="/assets/rachna-photo.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Personalized Meal Defaults for Factor US — Rachna Ravi">
+  <meta name="twitter:description" content="Rigour and speed aren&apos;t tradeoffs; they&apos;re how you avoid building the wrong thing really well.">
+  <meta name="twitter:image" content="/assets/rachna-photo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Personalized Meal Defaults for Factor US — Rachna Ravi</title>
+</head>
+<body>
+  <script>
+    (function() {
+      var t = localStorage.getItem('theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <div class="app">
+    <header class="header">
+      <nav class="header-nav" aria-label="Main navigation">
+        <div class="header-left">
+          <a href="/" class="header-back"><span aria-hidden="true">&larr;</span> Back</a>
+        </div>
+        <div class="header-links">
+          <a href="/">Work</a>
+          <a href="/photography">Photography</a>
+          <a href="/art">Art</a>
+          <button class="theme-toggle" aria-label="Switch to dark mode"><svg class="icon-sun" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3.05 3.05l1.06 1.06M11.89 11.89l1.06 1.06M3.05 12.95l1.06-1.06M11.89 4.11l1.06-1.06M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><svg class="icon-moon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M14 9.37A6.5 6.5 0 0 1 6.63 2 6.5 6.5 0 1 0 14 9.37Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </nav>
+    </header>
+    <main class="case-study-detail">
+      <div class="case-study-header">
+        <div class="case-study-meta">
+          <span>HelloFresh</span>
+          <span>Q4 2024</span>
+          <span>Senior Product Manager</span>
+        </div>
+        <h1 class="case-study-title">Personalized Meal Defaults for Factor US</h1>
+        <p class="case-study-tagline">A third of Factor customers never chose their own meals. They got whatever the system assigned &mdash; and the system didn&apos;t know they couldn&apos;t eat pork.</p>
+        <div class="case-study-summary">
+          <ul>
+            <li>A third of Factor US customers received preselected meals each week without making any choices. 30% were actively dissatisfied &mdash; the defaults included meals they couldn&apos;t eat or didn&apos;t want, and ratings for preselected meals had been declining for two years.</li>
+            <li>Designed and ran a three-variant experiment in eight weeks: collected two dietary restrictions (no pork, non-spicy) during signup and customized preselected meals accordingly. Scoped to mobile, two restrictions, seven sub-preferences &mdash; narrow enough to validate the mechanism, broad enough to be meaningful.</li>
+            <li>Among customers who selected an exclusion: retention +2.2%, conversion +2%, contributing to $30M+ in estimated customer lifetime value (USD). The broader experiment audience saw retention improve +4.5%, driven primarily by reduced pause rates.</li>
+            <li>Key decision: chose pre-built sub-preference meal strings over a real-time business-rules engine &mdash; less flexible, but shippable in weeks. The business-rules approach was the right long-term answer, but the infrastructure didn&apos;t exist and the hypothesis needed validating before the investment was justified.</li>
+          </ul>
+        </div>
+      </div>
+
+    <section class="case-study-section">
+      <h2>Context</h2>
+      <p>Factor, HelloFresh&apos;s ready-to-eat brand in the US, served millions of active subscribers. Customers chose a meal preference during signup &mdash; Keto, Protein Plus, Calorie Smart, and so on &mdash; and each week received a set of preselected meals based on that preference. If they wanted different meals, they had to go into the app and manually select from over 100 options.</p>
+      <p>33.5% never did. They received whatever the system assigned. And 30% of those customers were actively dissatisfied with what showed up. Meal ratings for preselected meals had declined over 6% from Q1 2022 to Q2 2024. Cancellation surveys and support tickets cited unwanted preselections as a driver. Customers called out meals they couldn&apos;t eat &mdash; pork when they didn&apos;t eat pork, spicy dishes when they avoided spice &mdash; and some assumed the system was already supposed to know this.</p>
+      <p>This was a separate initiative from the active-experience experimentation program I ran in 2023&ndash;2024. That work optimized how subscribers interacted with the product week-to-week. This one targeted what happened before they interacted at all &mdash; the default meals assigned to customers who never made a selection.</p>
+      <p>The longer-term vision was an ML-based personalization engine that would learn from behavior and ratings over time. That was over a year away. The question: could a minimal intervention &mdash; two dietary restrictions, collected during signup, applied to default meals &mdash; move the retention needle now?</p>
+    </section>
+
+    <section class="case-study-section">
+      <h2>The Problem</h2>
+      <p>The existing preference system was too coarse. A &ldquo;Protein Plus&rdquo; customer got the same preset meal string as every other Protein Plus customer. No accounting for whether they ate pork. No accounting for spice tolerance. The system treated all customers within a preference as identical.</p>
+      <p>This mattered because of how the product worked. Each week, Factor loaded a set of preselected meals into a customer&apos;s order. Customers who did meal selection could swap these out. But for the third who didn&apos;t, these defaults were the product. And the defaults were wrong often enough that customers were pausing, canceling, or throwing meals away.</p>
+      <p>Multiple UXR studies showed customers expected their preselections to already reflect their preferences and past orders. They were surprised to learn the system didn&apos;t consider any of this. The gap between what customers assumed and what the product actually did was generating friction that showed up in pause rates, cancellation drivers, and declining meal ratings.</p>
+    </section>
+
+    <section class="case-study-section">
+      <h2>Insights</h2>
+
+      <div class="case-study-subsection">
+        <h3>Two restrictions covered the highest-frequency pain points</h3>
+        <p>Roughly 20% of users looked for non-spicy meals and 4% looked for pork-free options. These were the most common unmet restrictions &mdash; table-stakes dietary needs that the existing preference system didn&apos;t capture. Most Factor customers avoided at least one ingredient when selecting meals manually. Starting with no-pork and non-spicy kept the test scoped while addressing the restrictions that showed up most often in dissatisfaction data. Two restrictions was an explicit scope choice: validate the mechanism first, expand later.</p>
+      </div>
+      <div class="case-study-subsection">
+        <h3>The menu constrained what was possible</h3>
+        <p>Not every preference-restriction combination could produce a credible experience. Keto plus pork-free returned only two unique recipes on some menu weeks &mdash; a consequence of shelf-life testing that had forced the Keto menu to rely on chicken recipes containing gelatin (derived from pork). Rather than ship an experience where customers would get the same two meals repeatedly, keto-porkfree was dropped from the test. Seven sub-preferences shipped instead of the originally planned eight. The menu assortment, not the product design, was the binding constraint on scope.</p>
+      </div>
+      <div class="case-study-subsection">
+        <h3>Sub-preferences traded sophistication for speed</h3>
+        <p>Two approaches were on the table. A business-rules engine would evaluate each meal against a customer&apos;s restrictions in real time, rank alternatives, and replace ineligible meals dynamically. Pre-built sub-preference meal strings &mdash; curated default lists for each preference-restriction combination, created by the Factor menu team &mdash; were less flexible but could ship in weeks. The business-rules approach was the right long-term solution but required infrastructure that didn&apos;t exist. We chose sub-preferences to validate the hypothesis within eight weeks, knowing the approach wouldn&apos;t scale past a handful of restrictions.</p>
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <h2>Hypotheses</h2>
+
+      <ol class="case-study-numbered-list">
+        <li>Offering customers the ability to specify dietary exclusions during signup, and reflecting those exclusions in their preselected meals, would improve retention &mdash; because customers would stop receiving meals they couldn&apos;t eat or didn&apos;t want.</li>
+        <li>The improvement would be driven primarily by reduced pause and cancellation &mdash; not by increased meal choice rate or AOV &mdash; because the problem was in the defaults experience, not in the selection experience.</li>
+        <li>Moving the preference question earlier in the signup funnel (grouping it with goals rather than placing it after box size) would improve retention independently of any preselection changes &mdash; worth isolating because it could be rolled out to markets where custom preselections weren&apos;t feasible.</li>
+      </ol>
+    </section>
+
+    <section class="case-study-section">
+      <h2>What We Built</h2>
+
+      <div class="case-study-subsection">
+        <h3>Signup funnel changes</h3>
+        <p>Added two questions to the Factor US mobile signup funnel, placed after the existing &ldquo;What are your goals?&rdquo; step. The first captured dietary preferences. The second captured restrictions (No Pork, Non-spicy). The existing preference selection step was removed &mdash; the new questions captured equivalent information and mapped to the same backend preferences, with the restriction layered on top. All inputs were saved to the customer&apos;s profile for future use.</p>
+      </div>
+      <div class="case-study-subsection">
+        <h3>Custom preselected meals</h3>
+        <p>For each supported preference-restriction combination, the Factor team created a sub-preference with its own default meal string. When the weekly menu loaded for a customer who hadn&apos;t yet made selections, the system served their sub-preference string instead of the base preference string. Meals that violated the restriction were replaced with eligible alternatives matching the base preference.</p>
+      </div>
+      <div class="case-study-subsection">
+        <h3>Three-variant experiment</h3>
+        <p>The experiment split the audience into three groups:</p>
+        <ul class="case-study-list">
+          <li><strong>Control:</strong> existing funnel and preselections</li>
+          <li><strong>movePreferenceQ:</strong> reordered funnel with preference question moved to follow goals &mdash; no change to preselections</li>
+          <li><strong>customPreselections:</strong> reordered funnel, restriction questions added, and custom preselected meals served based on inputs</li>
+        </ul>
+        <p>Targeting: users landing on the Goals page of the mobile signup funnel. Allocation ran for approximately five weeks with roughly 630,000 users per variant. Retention data was collected for four weeks post-allocation. Desktop was excluded because the goals/question flow didn&apos;t yet exist there.</p>
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <h2>Results</h2>
+
+      <div class="case-study-subsection">
+        <h3>Retention and revenue</h3>
+        <p>Of the customers who converted in the experiment variant, 38.8% selected a restriction (no pork or non-spicy). This was the cohort actually receiving personalized defaults &mdash; and the results were clear:</p>
+        <ul class="case-study-list">
+          <li><strong>Retention (AOR):</strong> +2.2% (2.5 delivered orders vs 2.41 in control)</li>
+          <li><strong>Conversion:</strong> +2%</li>
+          <li><strong>Avg net revenue per customer:</strong> +1.11%</li>
+        </ul>
+        <p>The full customPreselections variant &mdash; including customers who saw the reordered funnel but didn&apos;t select a restriction &mdash; showed even stronger aggregate numbers: delivered orders +4.5%, gross revenue +2.9%, gross margin +4.1%. AOV and meal choice rate showed no significant impact, which was consistent with the hypothesis: the problem was in the defaults experience, not the selection experience.</p>
+        <p>Conservative CLV estimate: $30M+ USD, deliberately constrained from higher raw numbers to account for potential confounders.</p>
+      </div>
+      <div class="case-study-subsection">
+        <h3>The funnel reordering drove its own impact</h3>
+        <p>We hypothesized that moving the preference question earlier in the funnel &mdash; grouping it with goals rather than placing it after box size &mdash; would independently improve retention by giving customers more confidence in the offering. The movePreferenceQ variant was designed to isolate this effect: it reordered the funnel questions but made no changes to preselections. It showed significantly positive results on delivered orders and margin, confirming the hypothesis. The AOR improvement in both variants was driven by reduced pause rates.</p>
+        <p>Separating the two effects mattered for the rollout decision. For Factor US, the customPreselections variant was rolled out to all mobile users. For other RTE markets where custom preselections weren&apos;t yet feasible, movePreferenceQ could be rolled out on its own &mdash; it had shown positive impact independently and set those markets up for future personalization.</p>
+      </div>
+      <div class="case-study-subsection">
+        <h3>Margin improvement came from revenue, not cost savings</h3>
+        <p>Initial analysis attributed the margin improvement to cheaper replacement meals &mdash; chicken and vegetarian replacing pork. Statsig cost data showed otherwise: costs didn&apos;t decrease. The margin improvement came entirely from higher gross revenue driven by more delivered orders. Customers with personalized defaults weren&apos;t generating cheaper orders &mdash; they were just ordering more often.</p>
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <h2>What Didn&apos;t Work</h2>
+      <p>The menu assortment was the hardest constraint. Keto plus pork-free had to be dropped because some weeks produced only two eligible recipes &mdash; not enough for a credible customer experience. The sub-preferences approach hit a ceiling: every new restriction multiplied the number of preset strings that needed manual curation, and the menu wasn&apos;t deep enough to support all combinations.</p>
+      <p>The experiment&apos;s target duration was adjusted from 63 to 50 days mid-run. Several metrics &mdash; including delivered orders &mdash; moved from non-significant to significant at the new threshold. The data team confirmed the change shouldn&apos;t have affected results, but it meant extra scrutiny on whether the improvement was real versus an artifact of the shortened window. This is part of why the impact was reported conservatively.</p>
+      <p>The initiative was scoped to new users only &mdash; active customers couldn&apos;t update their exclusion preferences through the existing account settings. This kept the MVP contained, but meant the full value of personalized defaults wouldn&apos;t be captured until the active experience was updated.</p>
+    </section>
+
+    <section class="case-study-section">
+      <h2>What&apos;s Next</h2>
+      <p>The sub-preferences approach validated the hypothesis but was not designed to scale. Every new restriction required manually curated meal strings for each preference, and the menu wasn&apos;t deep enough to support all combinations. The next step was the business-rules engine &mdash; dynamic replacement logic that could handle arbitrary restrictions without manual curation. The experiment results justified that investment. The profile data collected during signup also established the foundation for broader personalization: the customer preferences captured here became inputs for future recommendation work across RTE brands.</p>
+    </section>
+
+    <section class="case-study-section">
+      <h2>My Role</h2>
+      <p>Shipped the initiative in eight weeks &mdash; from problem definition through experiment design, launch, analysis, and rollout decision. Coordinated with the Growth squad for funnel implementation, aligning with their backlog to include the signup flow changes.</p>
+      <ul class="case-study-list">
+        <li>Scoped the MVP to two restrictions &mdash; an explicit choice against pressure to include more attributes. A clean result on two restrictions would justify the investment in the full personalization infrastructure. A noisy result on five restrictions would justify nothing.</li>
+        <li>Chose the sub-preferences approach over a business-rules engine. Sub-preferences could be built and validated within the eight-week timeline. The trade-off was explicit: this wouldn&apos;t scale past a few restrictions, but it would answer the question of whether personalized defaults mattered at all.</li>
+        <li>Designed the three-variant experiment structure to separate the impact of funnel reordering from the impact of personalized defaults. This meant the rollout decision wasn&apos;t all-or-nothing &mdash; markets that couldn&apos;t support custom preselections could still ship the funnel change on its own.</li>
+        <li>Dropped keto-porkfree from the test when menu analysis showed it could only return two unique recipes on some weeks. Accepted a reduced test scope to avoid shipping a sub-par experience that would have muddied the data.</li>
+        <li>Navigated the &ldquo;too good to be true&rdquo; results. The raw experiment numbers exceeded what the model predicted. Rather than report the upper bound, worked with the analysis team to produce a conservative estimate that accounted for potential confounders.</li>
+      </ul>
+    </section>
+
+      <a href="/" class="case-study-back"><span aria-hidden="true">&larr;</span> Back to all work</a>
+    </main>
+  </div>
+  <script>
+    (function() {
+      var toggle = document.querySelector('.theme-toggle');
+      var theme = document.documentElement.getAttribute('data-theme');
+      toggle.setAttribute('aria-label', 'Switch to ' + (theme === 'light' ? 'dark' : 'light') + ' mode');
+      document.body.classList.add('theme-transitions');
+      toggle.addEventListener('click', function() {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        this.setAttribute('aria-label', 'Switch to ' + (next === 'light' ? 'dark' : 'light') + ' mode');
+      });
+    })();
+  </script>
+</body>
+</html>
