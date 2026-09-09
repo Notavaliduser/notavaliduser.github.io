@@ -1,32 +1,248 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Product management portfolio — e-commerce, food tech, and grocery. Staff PM with 8+ years shipping products that move real business metrics." />
-    <meta property="og:title" content="Rachna Ravi — Product Manager" />
-    <meta property="og:description" content="Rigour and speed aren't tradeoffs; they're how you avoid building the wrong thing really well." />
-    <meta property="og:image" content="/og-image.jpg" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Rachna Ravi — Product Manager" />
-    <meta name="twitter:description" content="Rigour and speed aren't tradeoffs; they're how you avoid building the wrong thing really well." />
-    <meta name="twitter:image" content="/og-image.jpg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
-    <title>Rachna Ravi — Product Manager</title>
-  </head>
-  <body>
-    <script>
-      (function() {
-        var t = localStorage.getItem('theme');
-        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        document.documentElement.setAttribute('data-theme', t);
-      })();
-    </script>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Product management portfolio — e-commerce, food tech, and grocery. Staff PM with 8+ years shipping products that move real business metrics.">
+  <meta property="og:title" content="Rachna Ravi — Product Manager">
+  <meta property="og:description" content="Rigour and speed aren&apos;t tradeoffs; they&apos;re how you avoid building the wrong thing really well.">
+  <meta property="og:image" content="/assets/rachna-photo.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rachna Ravi — Product Manager">
+  <meta name="twitter:description" content="Rigour and speed aren&apos;t tradeoffs; they&apos;re how you avoid building the wrong thing really well.">
+  <meta name="twitter:image" content="/assets/rachna-photo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Rachna Ravi — Product Manager</title>
+</head>
+<body>
+  <script>
+    (function() {
+      var t = localStorage.getItem('theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <div class="app">
+    <header class="header">
+      <nav class="header-nav" aria-label="Main navigation">
+        <div class="header-left"></div>
+        <div class="header-links">
+          <a href="/" class="active">Work</a>
+          <a href="/photography">Photography</a>
+          <a href="/art">Art</a>
+          <button class="theme-toggle" aria-label="Switch to dark mode"><svg class="icon-sun" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3.05 3.05l1.06 1.06M11.89 11.89l1.06 1.06M3.05 12.95l1.06-1.06M11.89 4.11l1.06-1.06M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><svg class="icon-moon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M14 9.37A6.5 6.5 0 0 1 6.63 2 6.5 6.5 0 1 0 14 9.37Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-identity">
+          <div class="hero-photo">
+            <img src="/assets/rachna-photo.jpg" alt="Rachna Ravi">
+          </div>
+          <div class="hero-intro">
+            <h1 class="hero-name">Rachna Ravi</h1>
+            <p class="hero-tagline">Professional problem finder. Photographer. Maker of things.</p>
+          </div>
+        </div>
+        <blockquote class="hero-philosophy">
+          I find the problem everyone walked past — dig into what people actually do, not what they say — then ship small, fast experiments to prove it. Rigour and speed aren&apos;t tradeoffs; they&apos;re how you avoid building the wrong thing really well.
+        </blockquote>
+      </section>
+
+      <section class="section" aria-label="About">
+        <h2 class="section-heading">About</h2>
+        <div class="about-content">
+          <p>8+ years shipping products across e-commerce, food, grocery, and retail supply chain — from zero-to-market builds to platforms serving millions. MBA from IIM Kozhikode, certified Professional Scrum Product Owner I.</p>
+          <h3 class="about-heading">How I work</h3>
+          <div class="about-principles">
+            <div class="about-principle">
+              <strong>Constraints are design inputs.</strong> Legal, infrastructure, timelines — I don&apos;t treat these as blockers to escalate. They shape the product. Some of my best decisions came from working within a constraint everyone else was trying to remove.
+            </div>
+            <div class="about-principle">
+              <strong>Ship before the foundation is perfect.</strong> If the window matters more than the polish, I ship. Deliberate debt, scoped and paid down — not ignored. I&apos;d rather fix real problems from real users than hypothetical ones in a planning doc.
+            </div>
+            <div class="about-principle">
+              <strong>Say what didn&apos;t work before anyone asks.</strong> Every case study here has a section on what went wrong — not as setup for a lesson learned, but because the interesting part of a product decision is usually what you&apos;d change. If you can&apos;t name your mistakes specifically, you probably haven&apos;t examined them.
+            </div>
+            <div class="about-principle">
+              <strong>Reverse course when the data says to.</strong> I&apos;ve killed committed launches and pivoted strategies mid-flight when the numbers told a different story than the plan. The hard part isn&apos;t reading the signal — it&apos;s telling stakeholders their assumptions were wrong.
+            </div>
+            <div class="about-principle">
+              <strong>Leave the system better than the project.</strong> A survey methodology I introduced for one squad was adopted across four brands. A tooling fix for one feature became infrastructure other teams built on. A junior PM I mentored shipped the programme and was promoted. I think about what persists after the project ends — the capability, the method, the people.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Selected Work">
+        <h2 class="section-heading">Selected Work</h2>
+        <div class="case-studies-grid">
+        <a href="/case-study/referrals-sharing-vision" class="case-study-card case-study-card--compact">
+          <div class="case-study-card-content">
+            <div class="case-study-card-meta">
+              <span>HelloFresh</span>
+              <span>Dec 2025 – Present</span>
+            </div>
+            <h3 class="case-study-card-title">Rebuilding HelloFresh's Referral Programme</h3>
+            <p class="case-study-card-metric">€115M/year programme, narrowed -26% YoY decline to -13% within one quarter</p>
+            <p class="case-study-card-desc">Customers had stopped sharing. The experience made referring feel like selling — tactical, impersonal, and unchanged for three years.</p>
+            <span class="case-study-card-cta">Read case study <span aria-hidden="true">&rarr;</span></span>
+          </div>
+        </a>
+        <a href="/case-study/factor-weight-loss-program" class="case-study-card case-study-card--compact">
+          <div class="case-study-card-content">
+            <div class="case-study-card-meta">
+              <span>HelloFresh</span>
+              <span>Dec 2024 – Oct 2025</span>
+            </div>
+            <h3 class="case-study-card-title">Building Factor's Weight-Loss Programme</h3>
+            <p class="case-study-card-metric">$202 AOV (vs $120 Classic) · Conversion gap closed to neutral</p>
+            <p class="case-study-card-desc">Customers were manually building a weight-loss programme out of a meal delivery service. We gave them the structure they were already trying to create — and a premium tier worth paying for.</p>
+            <span class="case-study-card-cta">Read case study <span aria-hidden="true">&rarr;</span></span>
+          </div>
+        </a>
+        <a href="/case-study/rapid-experimentation-rte" class="case-study-card case-study-card--compact">
+          <div class="case-study-card-content">
+            <div class="case-study-card-meta">
+              <span>HelloFresh</span>
+              <span>2023 – 2024</span>
+            </div>
+            <h3 class="case-study-card-title">Rapid Experimentation in Ready-to-Eat</h3>
+            <p class="case-study-card-metric">$16M+ in cumulative customer value added</p>
+            <p class="case-study-card-desc">The active experience for millions of RTE subscribers was underperforming, and nobody could agree on what to fix first. Nine experiments, each targeting a specific customer behaviour, settled the debate with data.</p>
+            <span class="case-study-card-cta">Read case study <span aria-hidden="true">&rarr;</span></span>
+          </div>
+        </a>
+        </div>
+        <h3 class="section-subheading">Earlier Work</h3>
+        <div class="case-studies-grid case-studies-grid--earlier">
+        <a href="/case-study/loblaw-delivery-expansion" class="case-study-card case-study-card--compact">
+          <div class="case-study-card-content">
+            <div class="case-study-card-meta">
+              <span>Loblaw Digital</span>
+              <span>2020 – 2021</span>
+            </div>
+            <h3 class="case-study-card-title">Online Grocery Delivery Expansion</h3>
+            <p class="case-study-card-metric">CAD $40M incremental revenue</p>
+            <p class="case-study-card-desc">PC Express delivery covered a fraction of Canada. Four approaches on the table, a pandemic accelerating demand, and a bet that speed-to-coverage would outperform a cleaner but slower build.</p>
+            <span class="case-study-card-cta">Read case study <span aria-hidden="true">&rarr;</span></span>
+          </div>
+        </a>
+        <a href="/case-study/tecsys-new-store-platform" class="case-study-card case-study-card--compact">
+          <div class="case-study-card-content">
+            <div class="case-study-card-meta">
+              <span>Tecsys</span>
+              <span>2022</span>
+            </div>
+            <h3 class="case-study-card-title">New Store Platform MVP</h3>
+            <p class="case-study-card-metric">MVP to pilot in 6 months</p>
+            <p class="case-study-card-desc">A legacy OMS that retail clients had outgrown. The hard part was deciding what to leave behind — and finding the one net-new capability that would turn a defensive migration into something clients actually wanted.</p>
+            <span class="case-study-card-cta">Read case study <span aria-hidden="true">&rarr;</span></span>
+          </div>
+        </a>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Experience">
+        <h2 class="section-heading">Experience</h2>
+        <div class="timeline-list">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">Dec 2025 – Present</span>
+              <h3 class="timeline-title">Staff Product Manager<span class="timeline-company"> — HelloFresh</span></h3>
+              <p class="timeline-description">Referrals &amp; Sharing</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">Jul 2024 – Dec 2025</span>
+              <h3 class="timeline-title">Senior Product Manager II<span class="timeline-company"> — HelloFresh</span></h3>
+              <p class="timeline-description">Factor Programs</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">Jan 2023 – Jul 2024</span>
+              <h3 class="timeline-title">Senior Product Manager<span class="timeline-company"> — HelloFresh</span></h3>
+              <p class="timeline-description">RTE Active Experience</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">Feb 2022 – Jan 2023</span>
+              <h3 class="timeline-title">Product Manager<span class="timeline-company"> — Tecsys</span></h3>
+              <p class="timeline-description">OMNI OMS, Retail Platform Modernization</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">Sep 2021 – Jan 2022</span>
+              <h3 class="timeline-title">Senior Product Manager<span class="timeline-company"> — Browze</span></h3>
+              <p class="timeline-description">Cross-border E-commerce Marketplace</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">Nov 2020 – Sep 2021</span>
+              <h3 class="timeline-title">Senior Product Manager<span class="timeline-company"> — Loblaw Digital</span></h3>
+              <p class="timeline-description">PC Express Delivery, Online Grocery</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">Jan 2017 – Jun 2020</span>
+              <h3 class="timeline-title">Product Consultant<span class="timeline-company"> — Greyamp Consulting</span></h3>
+              <p class="timeline-description">Digital Transformation, BFSI (India &amp; Indonesia)</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">2015 – 2017</span>
+              <h3 class="timeline-title">Management Trainee<span class="timeline-company"> — Vodafone India</span></h3>
+              <p class="timeline-description">Multiple rotations across business functions</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Get in Touch">
+        <h2 class="section-heading">Get in Touch</h2>
+        <p class="contact-text">Looking for product leadership roles where I can dig into customer motivation, move fast with data, and build things that matter — in e-commerce, food tech, marketplace, or supply chain.</p>
+        <div class="contact-links">
+          <a href="mailto:rachna.ravi@gmail.com" class="contact-link">rachna.ravi@gmail.com</a>
+          <a href="https://www.linkedin.com/in/rachnaravi" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn (opens in new tab)">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script>
+    (function() {
+      var toggle = document.querySelector('.theme-toggle');
+      var theme = document.documentElement.getAttribute('data-theme');
+      toggle.setAttribute('aria-label', 'Switch to ' + (theme === 'light' ? 'dark' : 'light') + ' mode');
+      document.body.classList.add('theme-transitions');
+      toggle.addEventListener('click', function() {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        this.setAttribute('aria-label', 'Switch to ' + (next === 'light' ? 'dark' : 'light') + ' mode');
+      });
+    })();
+  </script>
+</body>
 </html>

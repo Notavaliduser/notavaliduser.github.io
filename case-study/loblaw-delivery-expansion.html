@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Product management portfolio — e-commerce, food tech, and grocery. Staff PM with 8+ years shipping products that move real business metrics.">
+  <meta property="og:title" content="Online Grocery Delivery Expansion — Rachna Ravi">
+  <meta property="og:description" content="Rigour and speed aren&apos;t tradeoffs; they&apos;re how you avoid building the wrong thing really well.">
+  <meta property="og:image" content="/assets/rachna-photo.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Online Grocery Delivery Expansion — Rachna Ravi">
+  <meta name="twitter:description" content="Rigour and speed aren&apos;t tradeoffs; they&apos;re how you avoid building the wrong thing really well.">
+  <meta name="twitter:image" content="/assets/rachna-photo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Online Grocery Delivery Expansion — Rachna Ravi</title>
+</head>
+<body>
+  <script>
+    (function() {
+      var t = localStorage.getItem('theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <div class="app">
+    <header class="header">
+      <nav class="header-nav" aria-label="Main navigation">
+        <div class="header-left">
+          <a href="/" class="header-back"><span aria-hidden="true">&larr;</span> Back</a>
+        </div>
+        <div class="header-links">
+          <a href="/">Work</a>
+          <a href="/photography">Photography</a>
+          <a href="/art">Art</a>
+          <button class="theme-toggle" aria-label="Switch to dark mode"><svg class="icon-sun" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3.05 3.05l1.06 1.06M11.89 11.89l1.06 1.06M3.05 12.95l1.06-1.06M11.89 4.11l1.06-1.06M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><svg class="icon-moon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M14 9.37A6.5 6.5 0 0 1 6.63 2 6.5 6.5 0 1 0 14 9.37Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </nav>
+    </header>
+    <main class="case-study-detail">
+      <div class="case-study-header">
+        <div class="case-study-meta">
+          <span>Loblaw Digital</span>
+          <span>2020 – 2021</span>
+          <span>Senior Product Manager</span>
+        </div>
+        <h1 class="case-study-title">Online Grocery Delivery Expansion</h1>
+        <p class="case-study-tagline">PC Express delivery covered a fraction of Canada. Four approaches on the table, a pandemic accelerating demand, and a bet that speed-to-coverage would outperform a cleaner but slower build.</p>
+        <div class="case-study-summary">
+          <ul>
+            <li>Loblaw's delivery coverage was limited to select urban centres. Most of Canada had no access, and pandemic demand was surging.</li>
+            <li>Evaluated four expansion approaches. Chose 3PL integration — the fastest path — accepting a service-level trade-off to unlock nationwide coverage in months instead of 18+.</li>
+            <li>CAD $40M in incremental revenue from previously inaccessible postal codes. Serviceability portal cut manual operational effort by 20%.</li>
+            <li>Key decision: presented the service-level trade-off explicitly to leadership rather than minimising the risk — speed-to-coverage justified it, and the revenue funded subsequent quality improvements.</li>
+          </ul>
+        </div>
+      </div>
+
+    <section class="case-study-section">
+      <h2>Context</h2>
+      <p>PC Express was Loblaw's online grocery platform — the digital arm of Canada's largest food retailer. Delivery was available in a handful of urban markets, while the rest of the country could only use curbside pickup. The COVID-19 pandemic had accelerated demand for grocery delivery nationwide, and the business needed to expand coverage rapidly while managing the complexity of integrating third-party logistics into an existing fulfilment ecosystem built for first-party operations.</p>
+    </section>
+
+    <section class="case-study-section">
+      <h2>The Problem</h2>
+      <p>Delivery coverage was limited to select urban centres where Loblaw operated its own last-mile logistics. Customers outside these areas — the majority of the Canadian population by geography — had no access to PC Express delivery. Demand signals were clear: search traffic, app downloads, and customer service inquiries from uncovered regions were all climbing, accelerated by pandemic-driven behaviour change.</p>
+      <p>Expanding delivery required solving a multi-system integration problem. The existing order orchestration pipeline was designed for first-party delivery: Loblaw-operated trucks, Loblaw-controlled delivery windows, Loblaw-staffed drivers. Introducing a third-party logistics provider meant touching order routing, serviceability rules, customer-facing delivery promises, operational dashboards, and customer support tooling simultaneously — without disrupting the existing first-party delivery experience that was already under pandemic-driven load.</p>
+    </section>
+
+    <section class="case-study-section">
+      <h2>Insights</h2>
+
+      <div class="case-study-subsection">
+        <h3>Coverage, not conversion, was the growth constraint</h3>
+        <p>The conversion rate within existing delivery markets was healthy. Customers who could access delivery used it. The gap was not in the product experience but in the operational footprint — every postal code without delivery coverage represented latent demand that could not convert regardless of how good the app was. Expanding coverage was a higher-leverage growth opportunity than optimising the existing delivery experience.</p>
+      </div>
+      <div class="case-study-subsection">
+        <h3>Four paths to nationwide — only one fit the timeline</h3>
+        <p>We evaluated four MVP approaches, scored across speed-to-market, implementation complexity, customer experience quality, and long-term scalability. The options ranged from a full in-house delivery build (highest quality, 18+ month timeline) to a lightweight 3PL integration with Loblaw handling orchestration (fastest, moderate complexity). The pandemic had compressed the acceptable timeline from years to months. The fastest viable approach — integrating a third-party logistics provider for last-mile fulfilment while keeping order orchestration in-house — won on speed while preserving Loblaw's control over the customer-facing experience. The trade-off was explicit: delivery reliability in 3PL-served areas would be lower than in first-party markets, and the customer experience would not fully surface this difference at launch.</p>
+      </div>
+      <div class="case-study-subsection">
+        <h3>Operational fragmentation was already costing money</h3>
+        <p>Before expansion, delivery coverage and serviceability rules were managed through fragmented manual processes — spreadsheets, email chains, and tribal knowledge about which postal codes were served by which fulfilment centre. There was no single source of truth. This fragmentation meant that customer support could not reliably answer questions about delivery availability, operations could not identify underperforming routes, and product could not make data-informed coverage decisions. Additionally, non-feasible delivery orders (items that could not physically be shipped, like oversized goods) were reaching the fulfilment pipeline and generating costs before anyone caught them.</p>
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <h2>Hypotheses</h2>
+
+      <ol class="case-study-numbered-list">
+        <li>A third-party logistics integration for last-mile fulfilment, with in-house order orchestration, would enable nationwide coverage in months rather than the 18+ months required for a first-party build — and the revenue from expanded coverage would justify the service-level trade-off.</li>
+        <li>A serviceability portal establishing a single source of truth for delivery coverage would eliminate fragmented manual processes and enable data-driven coverage decisions — reducing operational overhead and improving the accuracy of customer-facing delivery promises.</li>
+        <li>Automated item-level classification would catch non-feasible delivery items before they entered the fulfilment pipeline — reducing costs from orders that could not be completed and improving the customer experience by preventing failed deliveries.</li>
+      </ol>
+    </section>
+
+    <section class="case-study-section">
+      <h2>What We Built</h2>
+
+      <div class="case-study-subsection">
+        <h3>Order orchestration and 3PL integration</h3>
+        <p>Built the order orchestration layer that routed orders to either Loblaw's first-party delivery fleet or the third-party logistics provider based on serviceability rules. The integration connected the existing PC Express shopping experience to a new delivery network while preserving the first-party experience in markets where it already operated. The routing logic needed to handle edge cases: split orders where some items were 3PL-eligible and others were not, dynamic serviceability windows that changed based on 3PL capacity, and graceful fallbacks when 3PL coverage was temporarily unavailable.</p>
+      </div>
+      <div class="case-study-subsection">
+        <h3>Serviceability portal</h3>
+        <p>Created a serviceability portal that served as the single source of truth for delivery coverage across both first-party and 3PL networks. Operations, customer support, and product teams could see which postal codes were served, by which provider, with what delivery windows and reliability metrics. The portal replaced the fragmented manual processes that had made coverage decisions ad-hoc and support answers unreliable. It also became the tool used to plan expansion sequencing — identifying which new postal codes to activate based on demand signals and fulfilment capacity.</p>
+      </div>
+      <div class="case-study-subsection">
+        <h3>Automated item classification</h3>
+        <p>Mentored a product co-op to design and deliver an automated item-level classification system. The system flagged non-feasible delivery items (oversized, fragile, temperature-sensitive beyond 3PL capability) before they entered the fulfilment pipeline, preventing failed deliveries and reducing the cost of orders that could never be completed. The classification logic was based on item attributes and delivery method, running at the point of order creation rather than downstream in fulfilment.</p>
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <h2>Results</h2>
+
+      <div class="case-study-subsection">
+        <h3>Revenue and coverage</h3>
+        <p>Nationwide delivery coverage launched in August 2021, extending PC Express delivery from a handful of urban markets to customers across Canada. The expansion generated CAD $40M in incremental revenue from postal codes that had previously had zero delivery access. The revenue was incremental in the strict sense — these were customers who could not have converted through the delivery channel before the expansion, regardless of marketing spend or product optimisation.</p>
+      </div>
+      <div class="case-study-subsection">
+        <h3>Operational efficiency</h3>
+        <p>The serviceability portal reduced manual operational effort by 20%, eliminating the spreadsheet-and-email processes that had previously governed coverage decisions. The automated item classification system reduced costs from non-feasible delivery orders by catching them at order creation rather than at fulfilment. Customer support resolution times for delivery-related inquiries improved as agents gained access to real-time serviceability data.</p>
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <h2>What Didn't Work</h2>
+      <p>The service-level trade-off was real and visible to customers. Delivery windows and reliability in 3PL-served areas were noticeably worse than in first-party markets — wider windows, less predictable timing, higher rates of delayed or missed deliveries. The customer experience did not adequately surface this difference: a customer ordering in a 3PL area saw similar delivery promises to a customer in a first-party area, but the actual experience diverged. This drove a higher rate of customer complaints and support contacts from newly served areas than the model had anticipated.</p>
+      <p>The decision to prioritise speed over service-level parity was correct for the business case — the $40M in incremental revenue justified the trade-off. But the customer experience gap required sustained post-launch iteration on delivery promise communication, expectation setting, and serviceability rules. The portal we built became the tool for managing this, but the initial launch would have benefited from more explicit customer-facing differentiation between delivery tiers.</p>
+    </section>
+
+    <section class="case-study-section">
+      <h2>What's Next</h2>
+      <p>With nationwide coverage established, the focus shifted to closing the service-level gap between first-party and 3PL delivery. The serviceability portal's data enabled systematic analysis of underperforming routes and informed decisions about where to invest in first-party capacity versus where to improve 3PL reliability. The automated classification system was extended to handle new item categories as the grocery assortment evolved.</p>
+    </section>
+
+    <section class="case-study-section">
+      <h2>My Role</h2>
+      <p>Led product development for PC Express delivery across the end-to-end customer and fulfilment journey — from shopping through order handoff.</p>
+      <ul class="case-study-list">
+        <li>Drove the MVP option evaluation that selected the 3PL integration approach over three alternatives — arguing that speed-to-coverage justified the service-level trade-off, and that the revenue from expanded access would fund the subsequent quality improvements. This required presenting the trade-off explicitly to leadership rather than minimising the service-level risk.</li>
+        <li>Defined the serviceability portal scope as strategic tooling, not just an operational dashboard — positioning it as the platform for data-driven coverage decisions rather than a one-time launch support tool. This framing secured investment that a narrower scope would not have justified.</li>
+        <li>Mentored a product co-op who took on a critical delivery-eligibility problem: poor data on item sizes and weights meant customers could order items like washing machines or bulk packs of 2L bottles that exceeded vehicle capacity or carrier weight limits. He developed a weight-assignment framework combining volume, dimensions, and category data to flag products that should be excluded from delivery. The framework shipped before his term ended.</li>
+      </ul>
+    </section>
+
+      <a href="/" class="case-study-back"><span aria-hidden="true">&larr;</span> Back to all work</a>
+    </main>
+  </div>
+  <script>
+    (function() {
+      var toggle = document.querySelector('.theme-toggle');
+      var theme = document.documentElement.getAttribute('data-theme');
+      toggle.setAttribute('aria-label', 'Switch to ' + (theme === 'light' ? 'dark' : 'light') + ' mode');
+      document.body.classList.add('theme-transitions');
+      toggle.addEventListener('click', function() {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        this.setAttribute('aria-label', 'Switch to ' + (next === 'light' ? 'dark' : 'light') + ' mode');
+      });
+    })();
+  </script>
+</body>
+</html>

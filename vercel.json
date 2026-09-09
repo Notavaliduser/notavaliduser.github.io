@@ -1,3 +1,6 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/work", "destination": "/", "permanent": true }
+  ]
 }

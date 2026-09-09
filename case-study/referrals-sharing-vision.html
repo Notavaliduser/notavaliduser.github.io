@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Product management portfolio — e-commerce, food tech, and grocery. Staff PM with 8+ years shipping products that move real business metrics.">
+  <meta property="og:title" content="Rebuilding HelloFresh's Referral Programme — Rachna Ravi">
+  <meta property="og:description" content="Rigour and speed aren&apos;t tradeoffs; they&apos;re how you avoid building the wrong thing really well.">
+  <meta property="og:image" content="/assets/rachna-photo.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rebuilding HelloFresh's Referral Programme — Rachna Ravi">
+  <meta name="twitter:description" content="Rigour and speed aren&apos;t tradeoffs; they&apos;re how you avoid building the wrong thing really well.">
+  <meta name="twitter:image" content="/assets/rachna-photo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Rebuilding HelloFresh's Referral Programme — Rachna Ravi</title>
+</head>
+<body>
+  <script>
+    (function() {
+      var t = localStorage.getItem('theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <div class="app">
+    <header class="header">
+      <nav class="header-nav" aria-label="Main navigation">
+        <div class="header-left">
+          <a href="/" class="header-back"><span aria-hidden="true">&larr;</span> Back</a>
+        </div>
+        <div class="header-links">
+          <a href="/">Work</a>
+          <a href="/photography">Photography</a>
+          <a href="/art">Art</a>
+          <button class="theme-toggle" aria-label="Switch to dark mode"><svg class="icon-sun" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3.05 3.05l1.06 1.06M11.89 11.89l1.06 1.06M3.05 12.95l1.06-1.06M11.89 4.11l1.06-1.06M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><svg class="icon-moon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M14 9.37A6.5 6.5 0 0 1 6.63 2 6.5 6.5 0 1 0 14 9.37Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </nav>
+    </header>
+    <main class="case-study-detail">
+      <div class="case-study-header">
+        <div class="case-study-meta">
+          <span>HelloFresh</span>
+          <span>Dec 2025 – Present</span>
+          <span>Staff Product Manager</span>
+        </div>
+        <h1 class="case-study-title">Rebuilding HelloFresh's Referral Programme</h1>
+        <p class="case-study-tagline">Customers had stopped sharing. The experience made referring feel like selling — tactical, impersonal, and unchanged for three years.</p>
+        <div class="case-study-summary">
+          <ul>
+            <li>A €115M/year referral channel was in decline across every metric — invites, visits, conversions, viral coefficient.</li>
+            <li>The core insight: 52% of referred friends were individually value-negative, and the programme optimised for volume over quality.</li>
+            <li>Rebuilt the sharing experience, launched campaign infrastructure, and narrowed the YoY gap from -26% to -13% within one quarter — weekly invites up +18%, sessions +19%.</li>
+            <li>Key decision: shipped campaigns before fully consolidating the backend, accepting technical debt to capture seasonal windows.</li>
+          </ul>
+        </div>
+      </div>
+
+    <section class="case-study-section">
+      <h2>Context</h2>
+      <p>HelloFresh's Refer-a-Friend (RAF) programme lets existing customers invite friends to try the service — both get a reward. At scale, it generated €115M/year in customer value globally and was one of the highest-intent, lowest-cost acquisition channels in the business. By early 2026, the programme had no dedicated product team. The last major structural changes were made over three years prior. I took ownership in January 2026 as part of a newly formed squad tasked with reversing the decline.</p>
+    </section>
+
+    <section class="case-study-section">
+      <h2>The Problem</h2>
+      <p>Customers had stopped sharing. The ones who did share were sending invites that friends ignored. Every metric reflected this:</p>
+      <div class="case-study-table-wrapper">
+        <table class="case-study-table">
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>YoY Change</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Invite rate</td>
+              <td>-9%</td>
+            </tr>
+            <tr>
+              <td>RAF page visits</td>
+              <td>-29%</td>
+            </tr>
+            <tr>
+              <td>Invite-to-session rate</td>
+              <td>-40%</td>
+            </tr>
+            <tr>
+              <td>K-factor (viral coefficient)</td>
+              <td>-27%</td>
+            </tr>
+            <tr>
+              <td>US referral conversions</td>
+              <td>-33%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>US referral conversions fell -33% YoY — double the rate of overall platform conversions. The channel was underperforming the product it was meant to grow.</p>
+    </section>
+
+    <section class="case-study-section">
+      <h2>Insights</h2>
+
+      <div class="case-study-subsection">
+        <h3>For the customer sharing: nothing worth coming back to</h3>
+        <p>The referral page asked customers to copy a discount code and send it to a friend. That was it. No personal touch, no imagery of real people or food, no reason the act of sharing should feel good. Qualitative research described the experience as 'tactical and pushy' — it felt like selling, not giving. The page never changed. A customer who visited once saw the same layout, same copy, same offer six months later. There was no fresh content, no campaigns, no reason to return. The primary entry point (app navigation bar) drove 90%+ of traffic, but it reached people at arbitrary moments — not after cooking a great meal or rating a recipe they loved.</p>
+      </div>
+      <div class="case-study-subsection">
+        <h3>For the friend receiving: no compelling reason to act</h3>
+        <p>The referral discount had been diluted into complex tier structures. A friend receiving a referral link could find an equivalent or better deal through a homepage promo or paid ad. There was no unique value in being referred — and the invite itself was a generic discount code with no personal context about who sent it or why. The follow-up email sequence sent 16 emails over 31 days — a month of messages for a decision most people make in the first few days or not at all.</p>
+      </div>
+      <div class="case-study-subsection">
+        <h3>For the broader customer base: sharing existed only as referring</h3>
+        <p>The referral funnel only ever addressed self-identified 'referrers' — customers who actively decided to invite someone. But the much larger base of customers who share food content, talk about meals, or recommend recipes to friends had no surface in the product at all. The programme treated sharing as a single action (send a code) rather than a spectrum of behaviours.</p>
+      </div>
+      <div class="case-study-subsection">
+        <h3>The economics were pointing in the wrong direction</h3>
+        <p>The old programme optimised for volume from newly activated customers — they were the highest-sending segment and the easiest to prompt. A deep-dive with the analytics team showed this was fundamentally wrong. 52% of referred friends were individually value-negative — the programme was paying acquisition costs on conversions that destroyed value. The top 10% of friends carried 57% of all CVA. The quality signal wasn't random. Sender loyalty predicted friend value: a referral from a tenured, high-fit customer was worth ~3× more than one from a recently activated customer. Crucially, a causal analysis showed this wasn't tenure building quality over time — the quality was baked in from a customer's first referral. High-fit customers both referred well and stayed. The programme just wasn't distinguishing between them.</p>
+      </div>
+      <div class="case-study-subsection">
+        <h3>Why the experience couldn't evolve</h3>
+        <p>Customers experienced the same static page for three years — and the infrastructure was why. The programme ran on three disconnected backend systems. Only 6 of 13 international markets shared the same offer structure. Running a single experiment required configuring 144 individual settings across four platforms, manually synchronised — 60.5 hours for key markets, nearly 4× slower than comparable teams had achieved for similar scope. Five documented failure modes at every handoff, each silent. Average issue resolution: 151 hours. Data lagged by a minimum of 3 days. The result: roughly one experiment per quarter on a €115M channel. Assuming a 3% gain per test at quarterly cadence — conservative given the bundled test later delivered 4.5% — the opportunity cost of that constraint was estimated at ~€14M in annual CVA foregone.</p>
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <h2>Hypotheses</h2>
+
+      <ol class="case-study-numbered-list">
+        <li>Make sharing feel like giving, not selling. If the experience used personal imagery, relational language, and a simple 'free box for every friend' offer, customers would share more — because the old experience made them feel like a salesperson handing out a coupon.</li>
+        <li>Give customers a reason to come back. If the programme rotated monthly campaigns — sweepstakes, partner rewards — customers would revisit and re-share. The static page gave no reason for a second visit.</li>
+        <li>Reach people at the right moment. If we prompted customers to share when they're already feeling positive about the product — and compressed the follow-up to the days when friends are most likely to act — both invite volume and per-send conversion would increase.</li>
+        <li>Reach customers who don't engage with the referral page. Most customers don't think of themselves as 'referrers.' A lighter sharing surface — recipe sharing — would tap a different motivation without requiring them to enter the referral funnel.</li>
+      </ol>
+    </section>
+
+    <section class="case-study-section">
+      <h2>What We Built</h2>
+      <p>The work moved in three phases: Q1 — fix what was actively broken (infrastructure, data, platform migration). Q2 — build and launch RAF 2.0 (new experience, CRM, offer structure, campaign mechanics). Q3 — scale across markets and layer on new campaign types. Across those phases, the rebuild covered four layers.</p>
+      <div class="case-study-subsection">
+        <h3>Experience</h3>
+        <p>Redesigned from the customer's perspective. Imagery of people and food replaced promo-code visuals. Copy reframed the action as giving a friend a free box, not distributing a discount. The flat "free box for every friend" offer restored referrals as the highest-value way for someone new to try HelloFresh — something that had eroded as other channels caught up. A customer visiting the referral page now sees something different every month: a sweepstakes for FIFA World Cup tickets one month, a cookware reward the next, Meta Ray-Ban glasses after that. There's always a reason to come back and something new to share.</p>
+      </div>
+      <div class="case-study-subsection">
+        <h3>Triggers and follow-up</h3>
+        <p>Redesigned around how customers and friends actually behave. Nudges moved from scheduled cadences to behavioural triggers: prompting customers to share after they rate a meal highly, finish choosing their weekly box, or receive a delivery — moments when they're already thinking positively about the product. A redesigned post-meal-choice nudge — appearing immediately after a customer selects their weekly meals — went from fewer than 100 invites per week to over 600. The invite email sequence went from 16 emails over 31 days to 7 emails over 10 days — concentrating on the window when friends are most likely to act.</p>
+      </div>
+      <div class="case-study-subsection">
+        <h3>Platform</h3>
+        <p>The infrastructure that had blocked iteration was replaced entirely. Experiments now launch same-day, meaning the team can validate what works for customers in days, not quarters. New campaign types use shared templates and spin up in days, not sprints. Market expansion happens via configuration, not months of manual setup — Germany was the first expansion market; additional markets follow the same pattern. Commercial teams update page content, messaging, and rewards without engineering or app releases — so what customers see stays fresh without waiting for a development cycle.</p>
+      </div>
+      <div class="case-study-subsection">
+        <h3>Mechanics</h3>
+        <p>RAF 2.0 was built as a modular menu card — easy to extend, easy to configure per market. Two campaign levers launched first: raffles (time-limited sweepstakes that give customers something exciting to tell a friend about) and partner rewards (tangible products like cookware that make the invite more compelling to the recipient). Campaign rewards replace the base reward rather than stacking — a deliberate choice to keep acquisition costs controlled as new mechanics layer on. Both configurable per market without code changes. Recipe Share launched as the first non-referral sharing surface — a share button on the recipe page for customers who don't engage with the referral page but will share something they cooked.</p>
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <h2>Results</h2>
+
+      <div class="case-study-subsection">
+        <h3>Volume recovery</h3>
+        <p>By late August, US weekly invites reached 13,100 — continuing to climb as full rollout and campaign mechanics compounded.</p>
+        <p>The US test bundled page, offer, CRM, and entry point changes together — multiple simultaneous platform migrations meant isolating each variable would have required waiting out dependencies rather than shipping. To de-risk the bundle, we ran prototype user tests on key experience changes and launched to a friends-and-family cohort in Germany before the full US rollout. The bundle delivered a >4.5% uplift in weekly invites relative to the control group — statistically significant — and was rolled to 100% of users.</p>
+        <p>Canada narrowed from -22% YoY to -3%. Germany posted a ~29% invite-to-conversion rate in early results on a smaller base — directionally the highest across markets.</p>
+      <div class="case-study-table-wrapper">
+        <table class="case-study-table">
+          <thead>
+            <tr>
+              <th>Period</th>
+              <th>US weekly invites (avg)</th>
+              <th>YoY gap</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Q2 baseline</td>
+              <td>~8,600</td>
+              <td>-26%</td>
+            </tr>
+            <tr>
+              <td>Q3 first 5 weeks</td>
+              <td>10,300</td>
+              <td>-13%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+      <div class="case-study-subsection">
+        <h3>The conversion trade-off</h3>
+        <p>Invite-to-conversion rate dropped from 15.4% to the 9.7–12.6% range. This is real, and it matters to name.</p>
+        <p>The new experience reaches customers who previously never shared — people activated by the redesigned page, campaign mechanics, or a nudge after a good meal. These are first-time sharers. Their networks convert at a lower per-invite rate because the intent is different: they're sharing because the experience prompted them to, not because they've been actively trying to earn a reward. But they are net-new volume the old programme never reached.</p>
+        <p>By late August: 1,658 US weekly conversions, above the Q2 average (~1,318/wk) for the first time. The model produces net-positive conversions as volume scales.</p>
+      </div>
+      <div class="case-study-subsection">
+        <h3>Campaigns</h3>
+        <p>Two levers, independently testable. Raffles drive reach. Partner rewards drive conversion quality. The programme runs both simultaneously — something the old infrastructure would never have supported.</p>
+        <div class="case-study-subsection case-study-subsection--nested">
+          <h4>FIFA World Cup Sweepstakes (US, 2.5 weeks)</h4>
+          <p>+20.2% page sessions · +10.7% invites · +8.5% conversions. Take rate (% of visitors who entered): 14.8% vs 8.5% expected. Net economics: -$11.7K — the urgency mechanic drove measurable behavioural change, but prize cost exceeded incremental value in the short window.</p>
+        </div>
+        <div class="case-study-subsection case-study-subsection--nested">
+          <h4>Fissler Cookware Partner Reward (DE, 3 weeks)</h4>
+          <p>+15.7% conversions (95% CI: +9.0% to +22.9%). +6.53 percentage points on conversion rate. Net economics: +€5,646.</p>
+        </div>
+      </div>
+      <div class="case-study-subsection">
+        <h3>Operational velocity</h3>
+      <div class="case-study-table-wrapper">
+        <table class="case-study-table">
+          <thead>
+            <tr>
+              <th>Before</th>
+              <th>After</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>60.5h experiment setup (international)</td>
+              <td>Same-day launch</td>
+            </tr>
+            <tr>
+              <td>~1 experiment per quarter</td>
+              <td>Multiple concurrent, shipping biweekly</td>
+            </tr>
+            <tr>
+              <td>151h average issue resolution</td>
+              <td>Detection in hours, not weeks</td>
+            </tr>
+            <tr>
+              <td>Creative updates require app release</td>
+              <td>Commercial team updates directly</td>
+            </tr>
+            <tr>
+              <td>New campaign type = custom build</td>
+              <td>Shared template — new types in days</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+      <div class="case-study-subsection">
+        <h3>Non-referral sharing</h3>
+        <p>A customer who just cooked a recipe they loved sees a share button — no referral pitch, no discount code, just an easy way to send the recipe to a friend.</p>
+        <p>Recipe Share (US) added 3,755 invites per week from ~20,000 unique customers who don't engage with the traditional referral page (only 1.7% overlap between the two audiences). Conversion rate: 0.94% — structurally lower than traditional referrals because the intent is different. This is content virality, not peer-to-peer referral. The audience is net new, and recipe shares turned the blended invite trend from -5.0% to +0.8% growth.</p>
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <h2>What Didn't Work</h2>
+      <p>The old entry point strategy was the wrong model entirely. Before RAF 2.0, the approach to improving referral volume was to add more touchpoints — popups, modals, banners — across the app. These placements lived on other teams' surfaces: post-checkout, in-menu, on the homepage. They generated impressions, but the invites they produced were low-intent and low-quality. Internally, other product teams pushed back because referral popups were appearing across their domains. Users saw it as noise. The programme had optimised for visibility when the actual problem was that the experience behind the visibility wasn't worth engaging with. Stripping back to fewer, higher-intent entry points — triggered by moments of satisfaction rather than scheduled interruptions — was a deliberate reversal of the prior strategy.</p>
+      <p>FIFA economics didn't close. The sweepstakes mechanic worked behaviourally — higher engagement, more invites, more conversions. But the prize cost exceeded the incremental value generated in the 2.5-week window, producing a net loss of $11.7K. The learning was clear (urgency drives action) but the unit economics need tuning: shorter durations, lower prize costs, or higher-volume markets. This is an open problem, not a solved one.</p>
+      <p>Early Q3 weeks underperformed Q2 on conversions. The volume recovery was not instant. Before full rollout and campaign mechanics were both in place, weekly conversions sat below Q2 levels. The model only turned net-positive once sufficient volume compounded — which took weeks, not days. If we had been measured on conversion rate alone during those early weeks, the programme would have looked like a regression.</p>
+      <p>The bundled US test made attribution impossible. Page, offer, CRM, and entry points all shipped together because simultaneous platform migrations forced the timeline. The result was a statistically significant uplift — but no ability to isolate which lever mattered most. Decomposition is ongoing, but the honest answer is that six months in, we still cannot say with confidence whether the new page or the new offer was the primary driver.</p>
+    </section>
+
+    <section class="case-study-section">
+      <h2>What's Next</h2>
+      <p>The programme addressed volume first — that was the immediate crisis. The value concentration insight arrived after launch and pointed the programme toward its next phase: quality.</p>
+      <p>Early signals suggest the direction is right. The US experiment showed friends referred through the new experience placed ~20% more orders over 52 weeks (significant), with friend Net CCV up +16% and the unprofitable conversion rate down -13% — both directional. The Fissler partner reward mechanic drove a +15.7% conversion lift not by generating more invites, but by making each invite more compelling to the recipient — a quality lever, not a volume lever.</p>
+      <p>For customers, this means challenges they can enter with friends, more reasons to share beyond a discount, and a programme that feels different every month. For the business, the programme is heading toward full self-serve — market teams already update creative and offers independently; the next step is removing product involvement from campaign operations entirely.</p>
+    </section>
+
+    <section class="case-study-section">
+      <h2>My Role</h2>
+      <p>End-to-end ownership of the RAF programme rebuild — from strategy through delivery and ongoing optimisation.</p>
+      <ul class="case-study-list">
+        <li>Accepted the conversion rate trade-off. The new experience activates lower-intent sharers who convert at a lower per-invite rate. Argued for volume over per-invite efficiency — the old programme optimised for conversion rate on a shrinking base, which produced a clean metric and a dying channel.</li>
+        <li>Shipped campaigns before fully consolidating the backend. FIFA World Cup was a two-week window — if we waited for clean infrastructure, the moment was gone. Raffles and partner rewards launched on the new template architecture while parts of the legacy system were still being retired. The debt was real (dual systems running in parallel, manual config for some markets), but the alternative was another quarter of decline with nothing new to show stakeholders. The campaigns proved the programme could evolve; that bought us the runway to finish the migration.</li>
+        <li>Built the squad's operating rhythm from scratch. Daily demos, weekly deploys, biweekly experiment reads. The team had no established cadence when I joined. The rhythm was designed to make iteration the default, not a special event.</li>
+      </ul>
+    </section>
+
+      <a href="/" class="case-study-back"><span aria-hidden="true">&larr;</span> Back to all work</a>
+    </main>
+  </div>
+  <script>
+    (function() {
+      var toggle = document.querySelector('.theme-toggle');
+      var theme = document.documentElement.getAttribute('data-theme');
+      toggle.setAttribute('aria-label', 'Switch to ' + (theme === 'light' ? 'dark' : 'light') + ' mode');
+      document.body.classList.add('theme-transitions');
+      toggle.addEventListener('click', function() {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        this.setAttribute('aria-label', 'Switch to ' + (next === 'light' ? 'dark' : 'light') + ' mode');
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Product management portfolio — e-commerce, food tech, and grocery. Staff PM with 8+ years shipping products that move real business metrics.">
+  <meta property="og:title" content="Photography — Rachna Ravi">
+  <meta property="og:description" content="Rigour and speed aren&apos;t tradeoffs; they&apos;re how you avoid building the wrong thing really well.">
+  <meta property="og:image" content="/assets/rachna-photo.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Photography — Rachna Ravi">
+  <meta name="twitter:description" content="Rigour and speed aren&apos;t tradeoffs; they&apos;re how you avoid building the wrong thing really well.">
+  <meta name="twitter:image" content="/assets/rachna-photo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Photography — Rachna Ravi</title>
+</head>
+<body>
+  <script>
+    (function() {
+      var t = localStorage.getItem('theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <div class="app">
+    <header class="header">
+      <nav class="header-nav" aria-label="Main navigation">
+        <div class="header-left">
+          <a href="/" class="header-name">Rachna Ravi</a>
+        </div>
+        <div class="header-links">
+          <a href="/">Work</a>
+          <a href="/photography" class="active">Photography</a>
+          <a href="/art">Art</a>
+          <button class="theme-toggle" aria-label="Switch to dark mode"><svg class="icon-sun" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3.05 3.05l1.06 1.06M11.89 11.89l1.06 1.06M3.05 12.95l1.06-1.06M11.89 4.11l1.06-1.06M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><svg class="icon-moon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M14 9.37A6.5 6.5 0 0 1 6.63 2 6.5 6.5 0 1 0 14 9.37Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </nav>
+    </header>
+    <main class="collage-page">
+      <section class="hero">
+        <h1 class="hero-title">Photography</h1>
+      </section>
+      <div class="art-organic">
+        <div class="art-piece">
+          <img src="/assets/photography/cave-silhouettes.jpg" alt="Silhouettes at a cave mouth, light streaming in">
+        </div>
+        <div class="art-piece">
+          <img src="/assets/photography/jerash-columns.jpg" alt="Roman columns at Jerash, Jordan">
+        </div>
+        <div class="art-piece">
+          <img src="/assets/photography/monitor-lizard-pier.jpg" alt="Monitor lizard on a wooden pier overlooking the sea">
+        </div>
+        <div class="art-piece">
+          <img src="/assets/photography/donkeys-petra.jpg" alt="Three donkeys at Petra, Jordan">
+        </div>
+        <div class="art-piece">
+          <img src="/assets/photography/bougainvillea-fence.jpg" loading="lazy" alt="Bougainvillea spilling over a fence">
+        </div>
+        <div class="art-piece">
+          <img src="/assets/photography/city-windows-night.jpg" loading="lazy" alt="City building windows glowing at night">
+        </div>
+        <div class="art-piece">
+          <img src="/assets/photography/art-installation.jpg" loading="lazy" alt="Figure in an immersive projected art installation">
+        </div>
+        <div class="art-piece">
+          <img src="/assets/photography/maypole-ribbons.jpg" loading="lazy" alt="Maypole wrapped in colorful ribbons against the sky">
+        </div>
+        <div class="art-piece">
+          <img src="/assets/photography/puppy-petra.jpg" loading="lazy" alt="Puppy looking up at the camera">
+        </div>
+        <div class="art-piece">
+          <img src="/assets/photography/nevis-bungy-beetle.jpg" loading="lazy" alt="VW Beetle at Nevis Bungy, New Zealand">
+        </div>
+        <div class="art-piece">
+          <img src="/assets/photography/aerial-roundabout.jpg" loading="lazy" alt="Aerial view of a circular garden and blue taxis">
+        </div>
+        <div class="art-piece">
+          <img src="/assets/photography/purple-flower-bokeh.jpg" loading="lazy" alt="Purple flower on wooden surface, shallow depth of field">
+        </div>
+        <div class="art-piece">
+          <img src="/assets/photography/caterpillar-leaf.jpg" loading="lazy" alt="Fuzzy caterpillar on a broad leaf">
+        </div>
+        <div class="art-piece">
+          <img src="/assets/photography/seagull-dock.jpg" loading="lazy" alt="Red-billed gull perched on a dock bollard">
+        </div>
+        <div class="art-piece">
+          <img src="/assets/photography/boat-workshop.jpg" loading="lazy" alt="Boat under construction on an island shore">
+        </div>
+        <div class="art-piece">
+          <img src="/assets/photography/moth-fabric.jpg" loading="lazy" alt="Moth resting on woven fabric, macro">
+        </div>
+      </div>
+    </main>
+  </div>
+  <script>
+    (function() {
+      var toggle = document.querySelector('.theme-toggle');
+      var theme = document.documentElement.getAttribute('data-theme');
+      toggle.setAttribute('aria-label', 'Switch to ' + (theme === 'light' ? 'dark' : 'light') + ' mode');
+      document.body.classList.add('theme-transitions');
+      toggle.addEventListener('click', function() {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        this.setAttribute('aria-label', 'Switch to ' + (next === 'light' ? 'dark' : 'light') + ' mode');
+      });
+    })();
+  </script>
+</body>
+</html>
