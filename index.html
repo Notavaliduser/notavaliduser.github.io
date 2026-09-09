@@ -5,6 +5,7 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Product management portfolio — e-commerce, food tech, and grocery. Staff PM with 8+ years shipping products that move real business metrics.">
+  <meta name="robots" content="noai, noimageai">
   <meta property="og:title" content="Rachna Ravi — Product Manager">
   <meta property="og:description" content="Rigour and speed aren&apos;t tradeoffs; they&apos;re how you avoid building the wrong thing really well.">
   <meta property="og:image" content="/assets/rachna-photo.jpg">
@@ -223,8 +224,9 @@
         <h2 class="section-heading">Get in Touch</h2>
         <p class="contact-text">Looking for product leadership roles where I can dig into customer motivation, move fast with data, and build things that matter — in e-commerce, food tech, marketplace, or supply chain.</p>
         <div class="contact-links">
-          <a href="mailto:rachna.ravi@gmail.com" class="contact-link">rachna.ravi@gmail.com</a>
+          <a href="#" class="contact-link" id="email-link"></a>
           <a href="https://www.linkedin.com/in/rachnaravi" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn (opens in new tab)">LinkedIn</a>
+          <a href="/assets/rachna-ravi-resume.pdf" download class="contact-link contact-link--download" aria-label="Download resume as PDF">Resume <span aria-hidden="true">&darr;</span></a>
         </div>
       </section>
     </main>
@@ -242,6 +244,11 @@
         localStorage.setItem('theme', next);
         this.setAttribute('aria-label', 'Switch to ' + (next === 'light' ? 'dark' : 'light') + ' mode');
       });
+      var el = document.getElementById('email-link');
+      var u = 'rachna.ravi';
+      var d = 'gmail.com';
+      el.href = 'mailto:' + u + '@' + d;
+      el.textContent = u + '@' + d;
     })();
   </script>
 </body>
