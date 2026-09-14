@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Product management portfolio — e-commerce, food tech, and grocery. Staff PM with 8+ years shipping products that move real business metrics.">
+  <meta name="description" content="Product management portfolio — e-commerce, food tech, and grocery. Staff PM with 9+ years shipping products that move real business metrics.">
   <meta name="robots" content="noai, noimageai">
   <meta property="og:title" content="Personalized Meal Defaults for Factor US — Rachna Ravi">
   <meta property="og:description" content="Rigour and speed aren&apos;t tradeoffs; they&apos;re how you avoid building the wrong thing really well.">
@@ -81,11 +81,11 @@
 
       <div class="case-study-subsection">
         <h3>Two restrictions covered the highest-frequency pain points</h3>
-        <p>Roughly 20% of users looked for non-spicy meals and 4% looked for pork-free options. These were the most common unmet restrictions &mdash; table-stakes dietary needs that the existing preference system didn&apos;t capture. Most Factor customers avoided at least one ingredient when selecting meals manually. Starting with no-pork and non-spicy kept the test scoped while addressing the restrictions that showed up most often in dissatisfaction data. Two restrictions was an explicit scope choice: validate the mechanism first, expand later.</p>
+        <p>Roughly 20% of users looked for non-spicy meals and 4% looked for pork-free options. These were the most common unmet restrictions, table-stakes dietary needs that the existing preference system didn&apos;t capture. Most Factor customers avoided at least one ingredient when selecting meals manually. Starting with no-pork and non-spicy kept the test scoped while addressing the restrictions that showed up most often in dissatisfaction data. Two restrictions was an explicit scope choice: validate the mechanism first, expand later.</p>
       </div>
       <div class="case-study-subsection">
         <h3>The menu constrained what was possible</h3>
-        <p>Not every preference-restriction combination could produce a credible experience. Keto plus pork-free returned only two unique recipes on some menu weeks &mdash; a consequence of shelf-life testing that had forced the Keto menu to rely on chicken recipes containing gelatin (derived from pork). Rather than ship an experience where customers would get the same two meals repeatedly, keto-porkfree was dropped from the test. Seven sub-preferences shipped instead of the originally planned eight. The menu assortment, not the product design, was the binding constraint on scope.</p>
+        <p>Not every preference-restriction combination could produce a credible experience. Keto plus pork-free returned only two unique recipes on some menu weeks &mdash; a consequence of shelf-life testing that had forced the Keto menu to rely on chicken recipes containing gelatin (derived from pork). Rather than ship an experience where customers would get the same two meals repeatedly, keto-porkfree was dropped from the test. Seven sub-preferences shipped instead of the originally planned eight. The menu assortment was the binding constraint on scope.</p>
       </div>
       <div class="case-study-subsection">
         <h3>Sub-preferences traded sophistication for speed</h3>
@@ -98,7 +98,7 @@
 
       <ol class="case-study-numbered-list">
         <li>Offering customers the ability to specify dietary exclusions during signup, and reflecting those exclusions in their preselected meals, would improve retention &mdash; because customers would stop receiving meals they couldn&apos;t eat or didn&apos;t want.</li>
-        <li>The improvement would be driven primarily by reduced pause and cancellation &mdash; not by increased meal choice rate or AOV &mdash; because the problem was in the defaults experience, not in the selection experience.</li>
+        <li>The improvement would be driven primarily by reduced pause and cancellation &mdash; not by increased meal choice rate or AOV &mdash; because the friction was in what customers received by default, not in how they browsed or selected.</li>
         <li>Moving the preference question earlier in the signup funnel (grouping it with goals rather than placing it after box size) would improve retention independently of any preselection changes &mdash; worth isolating because it could be rolled out to markets where custom preselections weren&apos;t feasible.</li>
       </ol>
     </section>
@@ -137,7 +137,7 @@
           <li><strong>Conversion:</strong> +2%</li>
           <li><strong>Avg net revenue per customer:</strong> +1.11%</li>
         </ul>
-        <p>The full customPreselections variant &mdash; including customers who saw the reordered funnel but didn&apos;t select a restriction &mdash; showed even stronger aggregate numbers: delivered orders +4.5%, gross revenue +2.9%, gross margin +4.1%. AOV and meal choice rate showed no significant impact, which was consistent with the hypothesis: the problem was in the defaults experience, not the selection experience.</p>
+        <p>The full customPreselections variant, including customers who saw the reordered funnel but didn&apos;t select a restriction, showed even stronger aggregate numbers: delivered orders +4.5%, gross revenue +2.9%, gross margin +4.1%. AOV and meal choice rate showed no significant impact, which was consistent with the hypothesis: the problem was in the defaults experience, not the selection experience.</p>
         <p>Conservative CLV estimate: $30M+ USD, deliberately constrained from higher raw numbers to account for potential confounders.</p>
       </div>
       <div class="case-study-subsection">
@@ -165,10 +165,10 @@
 
     <section class="case-study-section">
       <h2>My Role</h2>
-      <p>Shipped the initiative in eight weeks &mdash; from problem definition through experiment design, launch, analysis, and rollout decision. Coordinated with the Growth squad for funnel implementation, aligning with their backlog to include the signup flow changes.</p>
+      <p>Shipped the initiative in eight weeks, from problem definition through experiment design, launch, analysis, and rollout decision. Coordinated with the Growth squad for funnel implementation, aligning with their backlog to include the signup flow changes.</p>
       <ul class="case-study-list">
-        <li>Scoped the MVP to two restrictions &mdash; an explicit choice against pressure to include more attributes. A clean result on two restrictions would justify the investment in the full personalization infrastructure. A noisy result on five restrictions would justify nothing.</li>
-        <li>Chose the sub-preferences approach over a business-rules engine. Sub-preferences could be built and validated within the eight-week timeline. The trade-off was explicit: this wouldn&apos;t scale past a few restrictions, but it would answer the question of whether personalized defaults mattered at all.</li>
+        <li>Scoped the MVP to two restrictions, an explicit choice against pressure to include more attributes. A clean result on two restrictions would justify the infrastructure investment, while a noisy result on five would not.</li>
+        <li>Chose the sub-preferences approach over a business-rules engine. Sub-preferences could be built and validated within the eight-week timeline. Sub-preferences wouldn&apos;t scale past a few restrictions, but they would answer whether personalized defaults mattered at all.</li>
         <li>Designed the three-variant experiment structure to separate the impact of funnel reordering from the impact of personalized defaults. This meant the rollout decision wasn&apos;t all-or-nothing &mdash; markets that couldn&apos;t support custom preselections could still ship the funnel change on its own.</li>
         <li>Dropped keto-porkfree from the test when menu analysis showed it could only return two unique recipes on some weeks. Accepted a reduced test scope to avoid shipping a sub-par experience that would have muddied the data.</li>
         <li>Navigated the &ldquo;too good to be true&rdquo; results. The raw experiment numbers exceeded what the model predicted. Rather than report the upper bound, worked with the analysis team to produce a conservative estimate that accounted for potential confounders.</li>
