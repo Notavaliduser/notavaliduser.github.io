@@ -50,23 +50,23 @@
           <span>Senior Product Manager</span>
         </div>
         <h1 class="case-study-title">Personalized Meal Defaults for Factor US</h1>
-        <p class="case-study-tagline">A third of Factor customers never chose their own meals. They got whatever the system assigned &mdash; and the system didn&apos;t know they couldn&apos;t eat pork.</p>
+        <p class="case-study-tagline">A third of Factor customers never chose their own meals. They got whatever the system assigned, and the system didn&apos;t know they couldn&apos;t eat pork.</p>
         <div class="case-study-summary">
           <ul>
-            <li>A third of Factor US customers received preselected meals each week without making any choices. 30% were actively dissatisfied &mdash; the defaults included meals they couldn&apos;t eat or didn&apos;t want, and ratings for preselected meals had been declining for two years.</li>
-            <li>Designed and ran a three-variant experiment in eight weeks: collected two dietary restrictions (no pork, non-spicy) during signup and customized preselected meals accordingly. Scoped to mobile, two restrictions, seven sub-preferences &mdash; narrow enough to validate the mechanism, broad enough to be meaningful.</li>
+            <li>A third of Factor US customers received preselected meals each week without making any choices. 30% were actively dissatisfied; the defaults included meals they couldn&apos;t eat or didn&apos;t want, and ratings for preselected meals had been declining for two years.</li>
+            <li>Designed and ran a three-variant experiment in eight weeks: collected two dietary restrictions (no pork, non-spicy) during signup and customized preselected meals accordingly. Scoped to mobile, two restrictions, seven sub-preferences: narrow enough to validate the mechanism, broad enough to be meaningful.</li>
             <li>Among customers who selected an exclusion: retention +2.2%, conversion +2%, contributing to $30M+ in estimated customer lifetime value (USD). The broader experiment audience saw retention improve +4.5%, driven primarily by reduced pause rates.</li>
-            <li>Key decision: chose pre-built sub-preference meal strings over a real-time business-rules engine &mdash; less flexible, but shippable in weeks. The business-rules approach was the right long-term answer, but the infrastructure didn&apos;t exist and the hypothesis needed validating before the investment was justified.</li>
+            <li>Key decision: chose pre-built sub-preference meal strings over a real-time business-rules engine. Less flexible, but shippable in weeks. The business-rules approach was the right long-term answer, but the infrastructure didn&apos;t exist and the hypothesis needed validating before the investment was justified.</li>
           </ul>
         </div>
       </div>
 
     <section class="case-study-section">
       <h2>Context</h2>
-      <p>Factor, HelloFresh&apos;s ready-to-eat brand in the US, served millions of active subscribers. Customers chose a meal preference during signup &mdash; Keto, Protein Plus, Calorie Smart, and so on &mdash; and each week received a set of preselected meals based on that preference. If they wanted different meals, they had to go into the app and manually select from over 100 options.</p>
-      <p>33.5% never did. They received whatever the system assigned. And 30% of those customers were actively dissatisfied with what showed up. Meal ratings for preselected meals had declined over 6% from Q1 2022 to Q2 2024. Cancellation surveys and support tickets cited unwanted preselections as a driver. Customers called out meals they couldn&apos;t eat &mdash; pork when they didn&apos;t eat pork, spicy dishes when they avoided spice &mdash; and some assumed the system was already supposed to know this.</p>
-      <p>This was a separate initiative from the active-experience experimentation program I ran in 2023&ndash;2024. That work optimized how subscribers interacted with the product week-to-week. This one targeted what happened before they interacted at all &mdash; the default meals assigned to customers who never made a selection.</p>
-      <p>The longer-term vision was an ML-based personalization engine that would learn from behavior and ratings over time. That was over a year away. The question: could a minimal intervention &mdash; two dietary restrictions, collected during signup, applied to default meals &mdash; move the retention needle now?</p>
+      <p>Factor, HelloFresh&apos;s ready-to-eat brand in the US, served millions of active subscribers. Customers chose a meal preference during signup (Keto, Protein Plus, Calorie Smart, and so on) and each week received a set of preselected meals based on that preference. If they wanted different meals, they had to go into the app and manually select from over 100 options.</p>
+      <p>33.5% never did. They received whatever the system assigned. And 30% of those customers were actively dissatisfied with what showed up. Meal ratings for preselected meals had declined over 6% from Q1 2022 to Q2 2024. Cancellation surveys and support tickets cited unwanted preselections as a driver. Customers called out meals they couldn&apos;t eat (pork when they didn&apos;t eat pork, spicy dishes when they avoided spice) and some assumed the system was already supposed to know this.</p>
+      <p>This was a separate initiative from the active-experience experimentation program I ran in 2023&ndash;2024. That work optimized how subscribers interacted with the product week-to-week. This one targeted what happened before they interacted at all: the default meals assigned to customers who never made a selection.</p>
+      <p>The longer-term vision was an ML-based personalization engine that would learn from behavior and ratings over time. That was over a year away. The question: could a minimal intervention (two dietary restrictions, collected during signup, applied to default meals) move the retention needle now?</p>
     </section>
 
     <section class="case-study-section">
@@ -85,11 +85,11 @@
       </div>
       <div class="case-study-subsection">
         <h3>The menu constrained what was possible</h3>
-        <p>Not every preference-restriction combination could produce a credible experience. Keto plus pork-free returned only two unique recipes on some menu weeks &mdash; a consequence of shelf-life testing that had forced the Keto menu to rely on chicken recipes containing gelatin (derived from pork). Rather than ship an experience where customers would get the same two meals repeatedly, keto-porkfree was dropped from the test. Seven sub-preferences shipped instead of the originally planned eight. The menu assortment was the binding constraint on scope.</p>
+        <p>Not every preference-restriction combination could produce a credible experience. Keto plus pork-free returned only two unique recipes on some menu weeks, a consequence of shelf-life testing that had forced the Keto menu to rely on chicken recipes containing gelatin (derived from pork). Rather than ship an experience where customers would get the same two meals repeatedly, keto-porkfree was dropped from the test. Seven sub-preferences shipped instead of the originally planned eight. The menu assortment was the binding constraint on scope.</p>
       </div>
       <div class="case-study-subsection">
         <h3>Sub-preferences traded sophistication for speed</h3>
-        <p>Two approaches were on the table. A business-rules engine would evaluate each meal against a customer&apos;s restrictions in real time, rank alternatives, and replace ineligible meals dynamically. Pre-built sub-preference meal strings &mdash; curated default lists for each preference-restriction combination, created by the Factor menu team &mdash; were less flexible but could ship in weeks. The business-rules approach was the right long-term solution but required infrastructure that didn&apos;t exist. We chose sub-preferences to validate the hypothesis within eight weeks, knowing the approach wouldn&apos;t scale past a handful of restrictions.</p>
+        <p>Two approaches were on the table. A business-rules engine would evaluate each meal against a customer&apos;s restrictions in real time, rank alternatives, and replace ineligible meals dynamically. Pre-built sub-preference meal strings (curated default lists for each preference-restriction combination, created by the Factor menu team) were less flexible but could ship in weeks. The business-rules approach was the right long-term solution but required infrastructure that didn&apos;t exist. We chose sub-preferences to validate the hypothesis within eight weeks, knowing the approach wouldn&apos;t scale past a handful of restrictions.</p>
       </div>
     </section>
 
@@ -97,9 +97,9 @@
       <h2>Hypotheses</h2>
 
       <ol class="case-study-numbered-list">
-        <li>Offering customers the ability to specify dietary exclusions during signup, and reflecting those exclusions in their preselected meals, would improve retention &mdash; because customers would stop receiving meals they couldn&apos;t eat or didn&apos;t want.</li>
-        <li>The improvement would be driven primarily by reduced pause and cancellation &mdash; not by increased meal choice rate or AOV &mdash; because the friction was in what customers received by default, not in how they browsed or selected.</li>
-        <li>Moving the preference question earlier in the signup funnel (grouping it with goals rather than placing it after box size) would improve retention independently of any preselection changes &mdash; worth isolating because it could be rolled out to markets where custom preselections weren&apos;t feasible.</li>
+        <li>Offering customers the ability to specify dietary exclusions during signup, and reflecting those exclusions in their preselected meals, would improve retention, because customers would stop receiving meals they couldn&apos;t eat or didn&apos;t want.</li>
+        <li>The improvement would be driven primarily by reduced pause and cancellation, not by increased meal choice rate or AOV, because the friction was in what customers received by default, not in how they browsed or selected.</li>
+        <li>Moving the preference question earlier in the signup funnel (grouping it with goals rather than placing it after box size) would improve retention independently of any preselection changes, worth isolating because it could be rolled out to markets where custom preselections weren&apos;t feasible.</li>
       </ol>
     </section>
 
@@ -108,7 +108,7 @@
 
       <div class="case-study-subsection">
         <h3>Signup funnel changes</h3>
-        <p>Added two questions to the Factor US mobile signup funnel, placed after the existing &ldquo;What are your goals?&rdquo; step. The first captured dietary preferences. The second captured restrictions (No Pork, Non-spicy). The existing preference selection step was removed &mdash; the new questions captured equivalent information and mapped to the same backend preferences, with the restriction layered on top. All inputs were saved to the customer&apos;s profile for future use.</p>
+        <p>Added two questions to the Factor US mobile signup funnel, placed after the existing &ldquo;What are your goals?&rdquo; step. The first captured dietary preferences. The second captured restrictions (No Pork, Non-spicy). The existing preference selection step was removed; the new questions captured equivalent information and mapped to the same backend preferences, with the restriction layered on top. All inputs were saved to the customer&apos;s profile for future use.</p>
       </div>
       <div class="case-study-subsection">
         <h3>Custom preselected meals</h3>
@@ -119,7 +119,7 @@
         <p>The experiment split the audience into three groups:</p>
         <ul class="case-study-list">
           <li><strong>Control:</strong> existing funnel and preselections</li>
-          <li><strong>movePreferenceQ:</strong> reordered funnel with preference question moved to follow goals &mdash; no change to preselections</li>
+          <li><strong>movePreferenceQ:</strong> reordered funnel with preference question moved to follow goals, no change to preselections</li>
           <li><strong>customPreselections:</strong> reordered funnel, restriction questions added, and custom preselected meals served based on inputs</li>
         </ul>
         <p>Targeting: users landing on the Goals page of the mobile signup funnel. Allocation ran for approximately five weeks with roughly 630,000 users per variant. Retention data was collected for four weeks post-allocation. Desktop was excluded because the goals/question flow didn&apos;t yet exist there.</p>
@@ -131,7 +131,7 @@
 
       <div class="case-study-subsection">
         <h3>Retention and revenue</h3>
-        <p>Of the customers who converted in the experiment variant, 38.8% selected a restriction (no pork or non-spicy). This was the cohort actually receiving personalized defaults &mdash; and the results were clear:</p>
+        <p>Of the customers who converted in the experiment variant, 38.8% selected a restriction (no pork or non-spicy). This was the cohort actually receiving personalized defaults, and the results were clear:</p>
         <ul class="case-study-list">
           <li><strong>Retention (AOR):</strong> +2.2% (2.5 delivered orders vs 2.41 in control)</li>
           <li><strong>Conversion:</strong> +2%</li>
@@ -142,25 +142,25 @@
       </div>
       <div class="case-study-subsection">
         <h3>The funnel reordering drove its own impact</h3>
-        <p>We hypothesized that moving the preference question earlier in the funnel &mdash; grouping it with goals rather than placing it after box size &mdash; would independently improve retention by giving customers more confidence in the offering. The movePreferenceQ variant was designed to isolate this effect: it reordered the funnel questions but made no changes to preselections. It showed significantly positive results on delivered orders and margin, confirming the hypothesis. The AOR improvement in both variants was driven by reduced pause rates.</p>
-        <p>Separating the two effects mattered for the rollout decision. For Factor US, the customPreselections variant was rolled out to all mobile users. For other RTE markets where custom preselections weren&apos;t yet feasible, movePreferenceQ could be rolled out on its own &mdash; it had shown positive impact independently and set those markets up for future personalization.</p>
+        <p>We hypothesized that moving the preference question earlier in the funnel (grouping it with goals rather than placing it after box size) would independently improve retention by giving customers more confidence in the offering. The movePreferenceQ variant was designed to isolate this effect: it reordered the funnel questions but made no changes to preselections. It showed significantly positive results on delivered orders and margin, confirming the hypothesis. The AOR improvement in both variants was driven by reduced pause rates.</p>
+        <p>Separating the two effects mattered for the rollout decision. For Factor US, the customPreselections variant was rolled out to all mobile users. For other RTE markets where custom preselections weren&apos;t yet feasible, movePreferenceQ could be rolled out on its own; it had shown positive impact independently and set those markets up for future personalization.</p>
       </div>
       <div class="case-study-subsection">
         <h3>Margin improvement came from revenue, not cost savings</h3>
-        <p>Initial analysis attributed the margin improvement to cheaper replacement meals &mdash; chicken and vegetarian replacing pork. Statsig cost data showed otherwise: costs didn&apos;t decrease. The margin improvement came entirely from higher gross revenue driven by more delivered orders. Customers with personalized defaults weren&apos;t generating cheaper orders &mdash; they were just ordering more often.</p>
+        <p>Initial analysis attributed the margin improvement to cheaper replacement meals: chicken and vegetarian replacing pork. Statsig cost data showed otherwise: costs didn&apos;t decrease. The margin improvement came entirely from higher gross revenue driven by more delivered orders. Customers with personalized defaults weren&apos;t generating cheaper orders; they were just ordering more often.</p>
       </div>
     </section>
 
-    <section class="case-study-section">
+    <section class="case-study-section case-study-section--candid">
       <h2>What Didn&apos;t Work</h2>
-      <p>The menu assortment was the hardest constraint. Keto plus pork-free had to be dropped because some weeks produced only two eligible recipes &mdash; not enough for a credible customer experience. The sub-preferences approach hit a ceiling: every new restriction multiplied the number of preset strings that needed manual curation, and the menu wasn&apos;t deep enough to support all combinations.</p>
-      <p>The experiment&apos;s target duration was adjusted from 63 to 50 days mid-run. Several metrics &mdash; including delivered orders &mdash; moved from non-significant to significant at the new threshold. The data team confirmed the change shouldn&apos;t have affected results, but it meant extra scrutiny on whether the improvement was real versus an artifact of the shortened window. This is part of why the impact was reported conservatively.</p>
-      <p>The initiative was scoped to new users only &mdash; active customers couldn&apos;t update their exclusion preferences through the existing account settings. This kept the MVP contained, but meant the full value of personalized defaults wouldn&apos;t be captured until the active experience was updated.</p>
+      <p>The menu assortment was the hardest constraint. Keto plus pork-free had to be dropped because some weeks produced only two eligible recipes, not enough for a credible customer experience. The sub-preferences approach hit a ceiling: every new restriction multiplied the number of preset strings that needed manual curation, and the menu wasn&apos;t deep enough to support all combinations.</p>
+      <p>The experiment&apos;s target duration was adjusted from 63 to 50 days mid-run. Several metrics (including delivered orders) moved from non-significant to significant at the new threshold. The data team confirmed the change shouldn&apos;t have affected results, but it meant extra scrutiny on whether the improvement was real versus an artifact of the shortened window. This is part of why the impact was reported conservatively.</p>
+      <p>The initiative was scoped to new users only; active customers couldn&apos;t update their exclusion preferences through the existing account settings. This kept the MVP contained, but meant the full value of personalized defaults wouldn&apos;t be captured until the active experience was updated.</p>
     </section>
 
     <section class="case-study-section">
       <h2>What&apos;s Next</h2>
-      <p>The sub-preferences approach validated the hypothesis but was not designed to scale. Every new restriction required manually curated meal strings for each preference, and the menu wasn&apos;t deep enough to support all combinations. The next step was the business-rules engine &mdash; dynamic replacement logic that could handle arbitrary restrictions without manual curation. The experiment results justified that investment. The profile data collected during signup also established the foundation for broader personalization: the customer preferences captured here became inputs for future recommendation work across RTE brands.</p>
+      <p>The sub-preferences approach validated the hypothesis but was not designed to scale. Every new restriction required manually curated meal strings for each preference, and the menu wasn&apos;t deep enough to support all combinations. The next step was the business-rules engine: dynamic replacement logic that could handle arbitrary restrictions without manual curation. The experiment results justified that investment. The profile data collected during signup also established the foundation for broader personalization: the customer preferences captured here became inputs for future recommendation work across RTE brands.</p>
     </section>
 
     <section class="case-study-section">
@@ -169,7 +169,7 @@
       <ul class="case-study-list">
         <li>Scoped the MVP to two restrictions, an explicit choice against pressure to include more attributes. A clean result on two restrictions would justify the infrastructure investment, while a noisy result on five would not.</li>
         <li>Chose the sub-preferences approach over a business-rules engine. Sub-preferences could be built and validated within the eight-week timeline. Sub-preferences wouldn&apos;t scale past a few restrictions, but they would answer whether personalized defaults mattered at all.</li>
-        <li>Designed the three-variant experiment structure to separate the impact of funnel reordering from the impact of personalized defaults. This meant the rollout decision wasn&apos;t all-or-nothing &mdash; markets that couldn&apos;t support custom preselections could still ship the funnel change on its own.</li>
+        <li>Designed the three-variant experiment structure to separate the impact of funnel reordering from the impact of personalized defaults. This meant the rollout decision wasn&apos;t all-or-nothing; markets that couldn&apos;t support custom preselections could still ship the funnel change on its own.</li>
         <li>Dropped keto-porkfree from the test when menu analysis showed it could only return two unique recipes on some weeks. Accepted a reduced test scope to avoid shipping a sub-par experience that would have muddied the data.</li>
         <li>Navigated the &ldquo;too good to be true&rdquo; results. The raw experiment numbers exceeded what the model predicted. Rather than report the upper bound, worked with the analysis team to produce a conservative estimate that accounted for potential confounders.</li>
       </ul>

@@ -54,7 +54,7 @@
         <div class="case-study-summary">
           <ul>
             <li>An enterprise OMS built on legacy .NET/SOAP that retail clients had outgrown. A full rewrite was not feasible; the challenge was finding where modernisation would deliver the most visible value.</li>
-            <li>Used support ticket analysis to scope the MVP around the highest-friction workflows, and turned a defensive migration into an offensive play by including Customer 360 View — a capability the old architecture could never support.</li>
+            <li>Used support ticket analysis to scope the MVP around the highest-friction workflows, and turned a defensive migration into an offensive play by including Customer 360 View, a capability the old architecture could never support.</li>
             <li>MVP to pilot in 6 months with one client. Customer 360 View became the standout feature in client feedback and sales conversations.</li>
             <li>Key decision: course-corrected to contract-first API design mid-project after discovering parallel development coordination was failing , which required admitting the original process was not working.</li>
           </ul>
@@ -63,7 +63,7 @@
 
     <section class="case-study-section">
       <h2>The Problem</h2>
-      <p>Tecsys OMNI is an enterprise Order Management System serving retail clients. The platform was built on legacy .NET with SOAP-based integrations — expensive to maintain and difficult to extend. A full rewrite was neither feasible within the timeline nor politically survivable: retail clients depended on existing workflows daily and would not tolerate disruption. The challenge was to find the slice where modernisation would deliver the most visible value, prove the approach to sceptical stakeholders, and create a foundation for subsequent phases — all within six months.</p>
+      <p>Tecsys OMNI is an enterprise Order Management System serving retail clients. The platform was built on legacy .NET with SOAP-based integrations, expensive to maintain and difficult to extend. A full rewrite was neither feasible within the timeline nor politically survivable: retail clients depended on existing workflows daily and would not tolerate disruption. The challenge was to find the slice where modernisation would deliver the most visible value, prove the approach to sceptical stakeholders, and create a foundation for subsequent phases, all within six months.</p>
     </section>
 
     <section class="case-study-section">
@@ -75,34 +75,34 @@
       </div>
       <div class="case-study-subsection">
         <h3>The modernisation could fill a gap the legacy system never could</h3>
-        <p>Customer 360 View — a unified screen showing a customer's complete order, return, and support history — had been on client wish lists for years. The legacy SOAP architecture made it prohibitively expensive. Moving to REST APIs meant it could be built as a natural part of the new architecture, turning the modernisation from a defensive 'keep the lights on' project into an offensive 'here is something you could never have before' story.</p>
+        <p>Customer 360 View (a unified screen showing a customer's complete order, return, and support history) had been on client wish lists for years. The legacy SOAP architecture made it prohibitively expensive. Moving to REST APIs meant it could be built as a natural part of the new architecture, turning the modernisation from a defensive 'keep the lights on' project into an offensive 'here is something you could never have before' story.</p>
       </div>
     </section>
 
     <section class="case-study-section">
       <h2>What We Built</h2>
-      <p>Migrated Returns Processing and Order Creation from the legacy .NET/SOAP system to a Vue.js frontend backed by REST APIs, preserving all existing business logic and client-configured workflows. Delivered the Customer 360 View as a net-new capability — replacing a workflow that previously required navigating three or four separate screens.</p>
+      <p>Migrated Returns Processing and Order Creation from the legacy .NET/SOAP system to a Vue.js frontend backed by REST APIs, preserving all existing business logic and client-configured workflows. Delivered the Customer 360 View as a net-new capability, replacing a workflow that previously required navigating three or four separate screens.</p>
       <p>The REST APIs served both the new Vue.js frontend and the legacy .NET frontend during the transition, so clients could be migrated individually with rollback capability rather than in a single cutover.</p>
     </section>
 
     <section class="case-study-section">
       <h2>Results</h2>
-      <p>Delivered within six months and began piloting with an existing client. Customer 360 View was the standout — the most-cited feature in client feedback and a reference point in sales conversations. The REST API layer and dual-serve architecture established the template for all subsequent modernisation phases. This was an enterprise B2B context where adoption metrics were measured in client migrations, not conversion funnels — the MVP validated the approach and the methodology.</p>
+      <p>Delivered within six months and began piloting with an existing client. Customer 360 View was the standout: the most-cited feature in client feedback and a reference point in sales conversations. The REST API layer and dual-serve architecture established the template for all subsequent modernisation phases. This was an enterprise B2B context where adoption metrics were measured in client migrations, not conversion funnels. The MVP validated the approach and the methodology.</p>
     </section>
 
-    <section class="case-study-section">
+    <section class="case-study-section case-study-section--candid">
       <h2>What Didn't Work</h2>
-      <p>Parallel backend and frontend development created coordination overhead we underestimated. API contract changes mid-sprint meant the frontend team was either building against stale assumptions or waiting. We adopted a contract-first approach partway through, but the early sprints absorbed more rework than they should have. The six-month timeline also left no room for visual polish — first client feedback was positive on capability but lukewarm on aesthetics, which made the initial conversations harder than they needed to be.</p>
+      <p>Parallel backend and frontend development created coordination overhead we underestimated. API contract changes mid-sprint meant the frontend team was either building against stale assumptions or waiting. We adopted a contract-first approach partway through, but the early sprints absorbed more rework than they should have. The six-month timeline also left no room for visual polish; first client feedback was positive on capability but lukewarm on aesthetics, which made the initial conversations harder than they needed to be.</p>
     </section>
 
     <section class="case-study-section">
       <h2>My Role</h2>
       <p>Led product modernisation for the Retail org, reporting to the VP of Product.</p>
       <ul class="case-study-list">
-        <li>Scoped the MVP based on support ticket analysis rather than stakeholder wish lists — choosing warehousing and customer support workflows over candidates with louder internal advocates but less user-facing impact.</li>
+        <li>Scoped the MVP based on support ticket analysis rather than stakeholder wish lists, choosing warehousing and customer support workflows over candidates with louder internal advocates but less user-facing impact.</li>
         <li>Made the case for including Customer 360 View in MVP scope. Adding net-new capability carried timeline risk, but it shifted the pilot conversation from migration justification to product value. Accepted that risk because early client buy-in would accelerate subsequent phases.</li>
         <li>Introduced contract-first API design mid-project after two sprints of frontend rework caused by shifting API contracts. The backend lead initially resisted the overhead of writing specs before code. I ran a retro that quantified the rework hours, which made the case. Both leads adopted the process for the remaining sprints.</li>
-        <li>Mentored a product co-op through an accessibility audit of the platform — by the end, she knew the WCAG guidelines, the audit tooling, how to break accessibility requirements into actionable stories, and had led part of a sprint planning session independently.</li>
+        <li>Mentored a product co-op through an accessibility audit of the platform. By the end, she knew the WCAG guidelines, the audit tooling, how to break accessibility requirements into actionable stories, and had led part of a sprint planning session independently.</li>
       </ul>
     </section>
 
