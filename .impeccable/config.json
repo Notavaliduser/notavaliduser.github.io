@@ -1,0 +1,29 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "bounce-easing",
+        "value": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+        "createdAt": "2026-09-21T19:56:38.581Z",
+        "reason": "Documented in DESIGN.md as ease-spring motion token for physical interactions, confirmed during /impeccable document"
+      },
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "styles.css",
+          "case-study/tecsys-new-store-platform.html",
+          "case-study/loblaw-delivery-expansion.html",
+          "case-study/referrals-sharing-vision.html",
+          "case-study/factor-weight-loss-program.html",
+          "case-study/rapid-experimentation-rte.html",
+          "case-study/personalized-defaults-factor.html"
+        ],
+        "createdAt": "2026-09-21T19:56:45.396Z",
+        "reason": "Documented in DESIGN.md as Blockquote and Case Study Summary components, confirmed during /impeccable document. Tecsys subsection borders are neutral --color-border, not accent color."
+      }
+    ]
+  }
+}

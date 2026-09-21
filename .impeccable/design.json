@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-21T00:00:00Z",
+  "title": "Design System: byrachna.com",
+  "extensions": {
+    "colorMeta": {
+      "slate-teal": {
+        "role": "primary",
+        "displayName": "Slate Teal",
+        "canonical": "oklch(51% 0.06 220)",
+        "tonalRamp": [
+          "#1a2e38",
+          "#264050",
+          "#355468",
+          "#4a7389",
+          "#6a94a9",
+          "#93b1c4",
+          "#bcd0dc",
+          "#e5eef3"
+        ]
+      },
+      "slate-teal-deep": {
+        "role": "primary",
+        "displayName": "Slate Teal Deep",
+        "canonical": "oklch(44% 0.06 220)",
+        "tonalRamp": [
+          "#142530",
+          "#1e3545",
+          "#2c4b5d",
+          "#3a6175",
+          "#5a8190",
+          "#7fa4b2",
+          "#aac5cf",
+          "#d5e3ea"
+        ]
+      },
+      "slate-teal-subtle": {
+        "role": "primary",
+        "displayName": "Slate Teal Subtle",
+        "canonical": "oklch(95% 0.005 220)"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#1a1a1a",
+        "tonalRamp": [
+          "#0a0a0a",
+          "#1a1a1a",
+          "#333333",
+          "#4d4d4d",
+          "#666666",
+          "#808080",
+          "#b3b3b3",
+          "#e5e5e5"
+        ]
+      },
+      "stone": {
+        "role": "neutral",
+        "displayName": "Stone",
+        "canonical": "#555555"
+      },
+      "pewter": {
+        "role": "neutral",
+        "displayName": "Pewter",
+        "canonical": "#6e6e6e"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "#ffffff"
+      },
+      "parchment": {
+        "role": "neutral",
+        "displayName": "Parchment",
+        "canonical": "#fafafa"
+      },
+      "frost": {
+        "role": "neutral",
+        "displayName": "Frost",
+        "canonical": "#f4f7f9"
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "#e5e5e5"
+      },
+      "rule-hover": {
+        "role": "neutral",
+        "displayName": "Rule Hover",
+        "canonical": "#93b1c4"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero name. The largest type on any page."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings. Semibold authority without shouting."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Card titles and case study section headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "About text, case study prose, contact copy. Generous 1.6 line height for sustained reading."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Meta text, CTAs, navigation links. Slightly elevated weight compensates for small size."
+      }
+    },
+    "shadows": [
+      {
+        "name": "soft-ambient",
+        "value": "0 2px 12px rgba(0, 0, 0, 0.06)",
+        "purpose": "Art piece hover glow. The only shadow in the system — flat-by-default with room to expand."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-fast",
+        "value": "0.15s ease",
+        "purpose": "Color and text transitions — links, nav, icon states."
+      },
+      {
+        "name": "ease-standard",
+        "value": "0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Background, border, and shadow transitions on cards and buttons."
+      },
+      {
+        "name": "ease-slow",
+        "value": "0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Reserved for large surface transitions."
+      },
+      {
+        "name": "ease-spring",
+        "value": "0.4s cubic-bezier(0.34, 1.56, 0.64, 1)",
+        "purpose": "Physical interactions — card lift, marker scale, button lift. The slight overshoot gives a tactile, real-world quality."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "768px"
+      },
+      {
+        "name": "art-mobile",
+        "value": "600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Case Study Card",
+      "kind": "card",
+      "refersTo": "card-case-study",
+      "description": "Interactive card linking to a case study. Shows company, date, title, metric, and description.",
+      "html": "<a href=\"#\" class=\"ds-card-case-study\">\n  <div class=\"ds-card-case-study-content\">\n    <div class=\"ds-card-case-study-meta\">\n      <span>HelloFresh</span>\n      <span>2024 – 2025</span>\n    </div>\n    <h3 class=\"ds-card-case-study-title\">Building Factor's Weight-Loss Programme</h3>\n    <p class=\"ds-card-case-study-metric\">$202 AOV (vs $120 Classic)</p>\n    <p class=\"ds-card-case-study-desc\">Customers were manually curating a weight-loss programme from their weekly choices.</p>\n    <span class=\"ds-card-case-study-cta\">Read case study <span aria-hidden=\"true\">\u2192</span></span>\n  </div>\n</a>",
+      "css": ".ds-card-case-study { display: block; background: #fafafa; border: 1px solid #e5e5e5; border-radius: 16px; color: #1a1a1a; text-decoration: none; overflow: hidden; transition: background 0.3s cubic-bezier(0.4,0,0.2,1), border-color 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s cubic-bezier(0.4,0,0.2,1), transform 0.4s cubic-bezier(0.34,1.56,0.64,1); } .ds-card-case-study:hover { background: #f4f7f9; border-color: #93b1c4; transform: translateY(-2px); } .ds-card-case-study:active { transform: translateY(0); } .ds-card-case-study-content { padding: 24px 32px; } .ds-card-case-study-meta { display: flex; gap: 16px; font-size: 0.875rem; color: #6e6e6e; } .ds-card-case-study-title { font-size: 1.25rem; font-weight: 600; margin: 8px 0; line-height: 1.2; } .ds-card-case-study-metric { display: inline-block; font-size: 0.875rem; font-weight: 600; color: #3a6175; padding: 2px 8px; background: rgba(74,115,137,0.07); border-radius: 4px; margin-bottom: 8px; } .ds-card-case-study-desc { font-size: 0.875rem; color: #6e6e6e; line-height: 1.6; margin-bottom: 8px; } .ds-card-case-study-cta { font-size: 0.875rem; color: #4a7389; font-weight: 500; transition: color 0.15s ease; } .ds-card-case-study:hover .ds-card-case-study-cta { color: #1a1a1a; }"
+    },
+    {
+      "name": "Pill Button",
+      "kind": "button",
+      "refersTo": "button-pill",
+      "description": "Pill-shaped action link for contact, back navigation, and 404 return. Ghost style at rest, fills on hover.",
+      "html": "<a href=\"#\" class=\"ds-btn-pill\">LinkedIn</a>",
+      "css": ".ds-btn-pill { display: inline-block; padding: 8px 24px; border: 1px solid #e5e5e5; border-radius: 100px; font-family: 'Atkinson Hyperlegible Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 500; font-size: 0.875rem; color: #555555; text-decoration: none; transition: border-color 0.3s cubic-bezier(0.4,0,0.2,1), color 0.3s cubic-bezier(0.4,0,0.2,1), background 0.3s cubic-bezier(0.4,0,0.2,1), transform 0.4s cubic-bezier(0.34,1.56,0.64,1); } .ds-btn-pill:hover { border-color: #4a7389; color: #4a7389; background: rgba(74,115,137,0.07); transform: translateY(-2px); } .ds-btn-pill:focus-visible { outline: 2px solid #4a7389; outline-offset: 2px; }"
+    },
+    {
+      "name": "Theme Toggle",
+      "kind": "button",
+      "refersTo": "button-theme-toggle",
+      "description": "Circular icon button toggling light/dark theme. Shows sun or moon icon based on current theme.",
+      "html": "<button class=\"ds-btn-theme-toggle\" aria-label=\"Switch to dark mode\">\n  <svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><path d=\"M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3.05 3.05l1.06 1.06M11.89 11.89l1.06 1.06M3.05 12.95l1.06-1.06M11.89 4.11l1.06-1.06M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/></svg>\n</button>",
+      "css": ".ds-btn-theme-toggle { background: none; border: 1px solid #e5e5e5; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: #555555; transition: color 0.15s ease, border-color 0.15s ease; } .ds-btn-theme-toggle:hover { color: #4a7389; border-color: #4a7389; } .ds-btn-theme-toggle:focus-visible { outline: 2px solid #4a7389; outline-offset: 2px; }"
+    },
+    {
+      "name": "Timeline Item",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Experience timeline row with dot marker, date range, role title, and description.",
+      "html": "<div class=\"ds-timeline-item\">\n  <div class=\"ds-timeline-marker\"></div>\n  <div class=\"ds-timeline-content\">\n    <span class=\"ds-timeline-period\">Jul 2024 \u2013 Dec 2025</span>\n    <h3 class=\"ds-timeline-title\">Senior Product Manager II<span class=\"ds-timeline-company\"> \u2014 HelloFresh</span></h3>\n    <p class=\"ds-timeline-desc\">Factor Programs</p>\n  </div>\n</div>",
+      "css": ".ds-timeline-item { display: flex; gap: 24px; padding: 24px 0; position: relative; transition: transform 0.3s cubic-bezier(0.4,0,0.2,1); } .ds-timeline-item:hover { transform: translateX(4px); } .ds-timeline-marker { width: 8px; height: 8px; border-radius: 50%; background: #4a7389; margin-top: 8px; flex-shrink: 0; transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1); } .ds-timeline-item:hover .ds-timeline-marker { transform: scale(1.3); } .ds-timeline-content { flex: 1; } .ds-timeline-period { font-size: 0.875rem; color: #6e6e6e; } .ds-timeline-title { font-size: 1rem; font-weight: 600; margin: 4px 0; line-height: 1.2; } .ds-timeline-company { font-weight: 400; color: #555555; } .ds-timeline-desc { font-size: 0.875rem; color: #555555; }"
+    },
+    {
+      "name": "Blockquote",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Hero philosophy blockquote with accent left border, subtle tinted background, and decorative opening quote mark.",
+      "html": "<blockquote class=\"ds-blockquote\">\n  Rigour and speed aren\u2019t tradeoffs; they\u2019re how you avoid building the wrong thing really well.\n</blockquote>",
+      "css": ".ds-blockquote { font-size: 1.25rem; font-weight: 500; line-height: 1.6; color: #1a1a1a; margin: 0; padding: 24px 32px; border-left: 3px solid #3a6175; background: rgba(74,115,137,0.07); border-radius: 0 8px 8px 0; position: relative; } .ds-blockquote::before { content: \"\\201C\"; position: absolute; top: -8px; left: 12px; font-size: 3rem; color: #3a6175; opacity: 0.4; line-height: 1; }"
+    },
+    {
+      "name": "Metric Pill",
+      "kind": "chip",
+      "refersTo": null,
+      "description": "Inline chip highlighting a key metric or number within a card.",
+      "html": "<span class=\"ds-metric-pill\">$202 AOV (vs $120 Classic)</span>",
+      "css": ".ds-metric-pill { display: inline-block; font-size: 0.875rem; font-weight: 600; color: #3a6175; padding: 2px 8px; background: rgba(74,115,137,0.07); border-radius: 4px; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Horizontal navigation bar with page links and theme toggle.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\">\n  <div class=\"ds-nav-links\">\n    <a href=\"#\" class=\"ds-nav-link ds-nav-link--active\">Work</a>\n    <a href=\"#\" class=\"ds-nav-link\">Photography</a>\n    <a href=\"#\" class=\"ds-nav-link\">Art</a>\n  </div>\n</nav>",
+      "css": ".ds-nav { display: flex; justify-content: flex-end; align-items: center; padding: 24px 0; border-bottom: 1px solid #e5e5e5; } .ds-nav-links { display: flex; gap: 24px; } .ds-nav-link { font-size: 0.875rem; color: #555555; text-decoration: none; transition: color 0.15s ease; } .ds-nav-link:hover { color: #1a1a1a; } .ds-nav-link--active { color: #4a7389; } .ds-nav-link:focus-visible { outline: 2px solid #4a7389; outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Honest Folio",
+    "overview": "The design system is an extension of the portfolio's editorial stance: transparency, directness, and evidence over ornamentation. The same voice that shows what didn't work in every case study shapes the visual language \u2014 open, unhurried, real. Nothing decorative competes with the content; nothing tries to impress beyond the work itself.\n\nA single typeface (Atkinson Hyperlegible Next) serves every role, chosen for readability over aesthetic fashion. A single accent color (Slate Teal) marks interactive elements and key metrics without creating visual hierarchy by decoration. The system trusts whitespace and typography weight to organize information, reserving color and motion for functional purpose.\n\nLight and dark themes are first-class citizens, adapting through CSS custom properties. The dark theme is not an inversion \u2014 it is a distinct tonal register of the same restrained palette, with the accent shifting warmer (#7ab3cc) to maintain legibility against dark backgrounds.",
+    "keyCharacteristics": [
+      "Single-accent, content-first palette with light/dark parity",
+      "One typeface at multiple weights \u2014 hierarchy through size and weight, never through font variety",
+      "Flat surfaces with tonal layering; shadows reserved for interaction states",
+      "Restrained, precise interactions: subtle hover lifts, spring easing, gentle border color shifts",
+      "Pill-shaped actions, rounded cards, circular markers \u2014 soft geometry throughout"
+    ],
+    "rules": [
+      {
+        "name": "The One Accent Rule",
+        "body": "Slate Teal is the only chromatic color in the system. If something needs color emphasis, it uses Slate Teal or one of its derivatives (Deep, Subtle). No secondary or tertiary accent exists; introducing one would break the content-first hierarchy.",
+        "section": "colors"
+      },
+      {
+        "name": "The Single Voice Rule",
+        "body": "One typeface, always. Weight and size create hierarchy; font-family does not change. Introducing a second face (serif for display, mono for code) would fracture the system's coherence.",
+        "section": "typography"
+      },
+      {
+        "name": "The Roundness Ladder",
+        "body": "Containers < Cards < Actions < Icons. Roundness increases with interactivity. A flat-cornered element would feel alien in this system; a pill-shaped container would steal focus from its content.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do use Slate Teal exclusively for interactive and emphasis elements \u2014 links, CTAs, metric highlights, timeline markers.",
+      "Do rely on typography weight (400 \u2192 500 \u2192 600 \u2192 700) and the three text colors (Ink, Stone, Pewter) to create hierarchy.",
+      "Do use the spring easing (cubic-bezier(0.34, 1.56, 0.64, 1)) for physical interactions (lift, scale, shift) and the standard easing for property transitions (color, background, border).",
+      "Do test every color choice in both light and dark themes \u2014 the dark theme accent (#7ab3cc) is a different value, not a CSS inversion.",
+      "Do prefer the content well (720px) for reading-heavy pages and the wide container (960px) for grid layouts."
+    ],
+    "donts": [
+      "Don't introduce a second chromatic color. No warm accents, no status colors, no gradients. If it needs color, it's Slate Teal or it's neutral.",
+      "Don't add a second typeface. Weight and size handle every hierarchy need.",
+      "Don't use shadows for at-rest surfaces. The tonal layering (Paper \u2192 Parchment \u2192 Frost) and borders handle depth without shadows.",
+      "Don't break the roundness ladder: containers (8px) < cards (16px) < actions (pill) < icons (circle).",
+      "Don't use uppercase text except for the \"How I Work\" subheading pattern (0.02em letter-spacing, uppercase, 1rem, 600 weight)."
+    ]
+  }
+}
